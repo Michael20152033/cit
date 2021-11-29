@@ -1,0 +1,95 @@
+.c-configurator-box {
+  margin: 4rem 0;
+  &__first {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f6;
+    padding: 2rem 3rem;
+    height: 100%;
+    @include media-breakpoint-down(xl) {
+      padding: 2rem 1.5rem 2rem 2rem;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      height: auto;
+    }
+    .c-configurator-box__title  {
+      font-size: 2.4rem;
+      font-weight: 700;
+      display: flex;
+      @include media-breakpoint-down(sm) {
+        font-size: 2rem;
+      }
+    }
+    .c-configurator-box__action {
+      display: none;
+      border-radius: .6rem;
+      @include media-breakpoint-down(xl) {
+        display: flex;
+      }
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+  &__main {
+    background-color: #f5f5f6;
+    padding: 2rem 0 2rem 4rem;
+    @include media-breakpoint-down(xl) {
+      padding: 2rem 0 2rem 2rem;
+    }
+    .c-configurator-box__title  {
+      display: block;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      font-weight: 500;
+      @include media-breakpoint-down(sm) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &__try {
+    background-color: #f5f5f6;
+    padding: 2rem 2rem 1.5rem;
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      flex-direction: column;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      margin-top: 1rem;
+    }
+    .c-configurator-box__title {
+      margin-bottom: 1rem;
+      display: flex;
+      font-size: 2rem;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    .icon {
+      font-size: 1.6rem;
+      margin-right: 1rem;
+      color: #ffd34e;
+    }
+    span {
+      font-size: 1.4rem;
+      line-height: normal;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+}

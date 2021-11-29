@@ -1,0 +1,15 @@
+extends _includes/_extends/main
+
+include _includes/components/c-category-tile/c-category-tile
+include _includes/components/c-products-banner/c-products-banner
+include _includes/components/c-products-list/c-products-list
+include _includes/components/c-products-categories/c-products-categories
+include _includes/components/c-product-tile/c-product-tile
+include _includes/components/c-main-list-content/c-main-list-content
+
+//- block head 
+//- 	+head({'title' : 'Главная'})
+
+block content 
+  +c-products-list()
+  

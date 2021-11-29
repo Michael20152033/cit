@@ -1,0 +1,729 @@
+mixin c-product(data)
+	.c-product
+		.container 
+			.c-product__inner
+				.c-product__breadcrumbs.c-product-breadcrumbs.c-product-breadcrumbs--mob
+					ul.h-reset-list.c-product-breadcrumbs__list
+						li.c-product-breadcrumbs__item
+							a(href="#").c-product-breadcrumbs__link Канцтовары, Мебель и Офисная техника
+						li.c-product-breadcrumbs__item
+							a(href="#").c-product-breadcrumbs__link Мебель офисная
+						li.c-product-breadcrumbs__item
+							a(href="#").c-product-breadcrumbs__link Кресла и стулья
+						li.c-product-breadcrumbs__item
+							a(href="#").c-product-breadcrumbs__link A4TECH
+				.row 
+					.col-lg-7
+						.c-product__slider
+							.swiper-container.productSliderMain
+								.swiper-wrapper
+									.swiper-slide 
+										.c-product__slider-img
+											img(src='s/images/useful/product/main1.jpg')
+									.swiper-slide
+										.c-product__slider-img
+											img(src='s/images/useful/product/main2.jpg')
+									.swiper-slide 
+										.c-product__slider-img
+											img(src='s/images/useful/product/main1.jpg')
+									.swiper-slide
+										.c-product__slider-img
+											img(src='s/images/useful/product/main2.jpg')
+									.swiper-slide 
+										.c-product__slider-img
+											img(src='s/images/useful/product/main1.jpg')
+									.swiper-slide 
+										.c-product__slider-img
+											img(src='s/images/useful/product/main1.jpg')
+									.swiper-slide
+										.c-product__slider-img
+											img(src='s/images/useful/product/main2.jpg')
+									.swiper-slide 
+										.c-product__slider-img
+											img(src='s/images/useful/product/main1.jpg')
+				
+							.c-product__slider-thumbs
+								.swiper-container.productSliderThumb(thumbsslider='')
+									.swiper-wrapper
+										.swiper-slide
+											img(src='s/images/useful/product/thumb1.jpg')
+										.swiper-slide
+											img(src='s/images/useful/product/thumb2.jpg')
+										.swiper-slide
+											img(src='s/images/useful/product/thumb1.jpg')
+										.swiper-slide
+											img(src='s/images/useful/product/thumb2.jpg')
+										.swiper-slide
+											img(src='s/images/useful/product/thumb1.jpg')
+										.swiper-slide
+											img(src='s/images/useful/product/thumb1.jpg')
+										.swiper-slide
+											img(src='s/images/useful/product/thumb2.jpg')
+										.swiper-slide
+											img(src='s/images/useful/product/thumb1.jpg')
+								.swiper-button.swiper-button-next.c-product__next
+									+svg('icon-arrow')
+								.swiper-button.swiper-button-prev.c-product__prev
+									+svg('icon-arrow')
+
+					.col-lg-13
+						.c-product__main
+							.c-product__breadcrumbs.c-product-breadcrumbs
+								ul.h-reset-list.c-product-breadcrumbs__list
+									li.c-product-breadcrumbs__item
+										a(href="#").c-product-breadcrumbs__link Канцтовары, Мебель и Офисная техника
+									li.c-product-breadcrumbs__item
+										a(href="#").c-product-breadcrumbs__link Мебель офисная
+									li.c-product-breadcrumbs__item
+										a(href="#").c-product-breadcrumbs__link Кресла и стулья
+									li.c-product-breadcrumbs__item
+										a(href="#").c-product-breadcrumbs__link A4TECH
+							.c-product-tile__labels
+								span.c-product-tile__label.orange Рассрочка 0-0-12
+							h1.c-product__title Кресло игровое A4TECH Bloody GC-870, черный/красный
+							.c-product__meta.c-product-meta
+								.c-product-meta__actions
+									.c-product-meta__rate
+										+svg('icon-star')
+										span 4.8
+									a(href="#").c-product-meta__review
+										+svg('icon-reviews')
+										span 5 Отзывов
+								span.c-product-meta__code Код товара: 1409013
+							span.c-product__bonus +180 бонусов
+							.c-product__price
+								span 17 990 
+								span.rub ₽
+							.c-product__actions 
+								button(type="button" data-bs-toggle="modal" data-bs-target="#basketModal").e-btn.e-btn--accent-filled.e-btn--size-m.c-product__buy Оформить заказ
+								.c-product__counter
+									+c-counter()
+								button(type="button").c-product__favourites
+									+svg('icon-favourites')
+							.c-product__credit
+								+svg('icon-credit')
+								span 1807 ₽ / месяц в кредит за 10 минут
+								button(type="button").btn-question
+									+svg('icon-question')
+									.btn-question__txt 
+										span  1807 ₽ / месяц в кредит за 10 минут 1807 ₽ / месяц в кредит за 10 минут 1807 ₽ / месяц в кредит за 10 минут
+							.c-product__delivery.c-product-delivery
+								+svg('icon-delivery')
+								.c-product-delivery__list 
+									.c-product-delivery__item 
+										a(href="#") Доставка
+										span.c-product-delivery__txt сегодня и позже, с 15 июня, 
+											span.c-product-delivery__txt--accent бесплатно
+										button(type="button").btn-question
+											+svg('icon-question')
+									.c-product-delivery__item 
+										a(href="#") Самовывоз
+										p из 5 магазинов сегодня
+										p из 360 магазинов и пунктов выдачи завтра и позже
+										
+		.c-product__tab-wrapper
+			.c-product__tab-wrapper
+				.container
+					ul#productTab.nav(role='tablist')
+						li.nav-item(role='presentation')
+							button#about-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#about' type='button' role='tab' aria-controls='about' aria-selected='true') О товаре
+						li.nav-item(role='presentation')
+							button#characteristics-tab.nav-link(data-bs-toggle='tab' data-bs-target='#characteristics' type='button' role='tab' aria-controls='characteristics' aria-selected='false') Характеристики
+						li.nav-item(role='presentation')
+							button#accessories-tab.nav-link(data-bs-toggle='tab' data-bs-target='#accessories' type='button' role='tab' aria-controls='accessories' aria-selected='false') Аксессуары
+						li.nav-item(role='presentation')
+							button#service-tab.nav-link(data-bs-toggle='tab' data-bs-target='#service' type='button' role='tab' aria-controls='service' aria-selected='false') Услуги
+								span 1
+						li.nav-item(role='presentation')
+							button#overviews-tab.nav-link(data-bs-toggle='tab' data-bs-target='#overviews' type='button' role='tab' aria-controls='overviews' aria-selected='false') Обзоры
+						li.nav-item(role='presentation')
+							button#reviews-tab.nav-link(data-bs-toggle='tab' data-bs-target='#reviews' type='button' role='tab' aria-controls='reviews' aria-selected='false') Отзывы
+								span 5
+						li.nav-item(role='presentation')
+							button#faq-tab.nav-link(data-bs-toggle='tab' data-bs-target='#faq' type='button' role='tab' aria-controls='faq' aria-selected='false') Вопрос-ответ
+						li.nav-item(role='presentation')
+							button#docs-tab.nav-link(data-bs-toggle='tab' data-bs-target='#docs' type='button' role='tab' aria-controls='docs' aria-selected='false') Документация
+								span 2
+				#productTabContent.tab-content
+					#about.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='about-tab')
+						.c-product__tab-content.c-product-tab-content.gray
+							.container
+								.row
+									.col-xl-4
+										.c-product-tab-content__info
+											.c-product-tab-content__info-head
+												h2.c-product-tab-content__title Основное
+												a(href="#").c-product-tab-content__more Все характеристики
+									.col-xl-16
+										.c-product-tab-content__wrapper
+											.c-product-tab-content__specifications
+												.c-product-tab-content__specification-row
+													span.c-product-tab-content__specification-name Тип установки
+													span.c-product-tab-content__specification-val на колесиках
+												.c-product-tab-content__specification-row
+													span.c-product-tab-content__specification-name Ограничение по весу
+													span.c-product-tab-content__specification-val 150 кг
+												.c-product-tab-content__specification-row
+													span.c-product-tab-content__specification-name Материал обивки
+													span.c-product-tab-content__specification-val эко.кожа
+											button(type="button").e-btn.e-btn--accent-border Задать вопрос эксперту
+						.c-product__tab-content.c-product-tab-content
+							.container
+								.row
+									.col-xl-4
+										.c-product-tab-content__info
+											.c-product-tab-content__info-head
+												h2.c-product-tab-content__title Описание
+									.col-xl-16
+										.c-product-tab-content__wrapper
+											.c-product-tab-content__descriptions
+												.c-product-tab-content__description-text
+													p Любой геймер будет в восторге от игрового кресла A4TECH Bloody GC-870. Данная модель имеет подлокотники, механизм качания с вертикальной фиксацией. Кресло предусматривает ограничение по весу в 150 кг, а благодаря эргономичным колесикам оно будет устойчиво стоять на любой поверхности.
+													p Стильный дизайн и универсальный черный цвет отлично дополнят любой интерьер в комнате. Вместе с игровым креслом A4TECH Bloody GC-870 в комплекте также имеются подушка для поясницы и шеи, чтобы ваша игра стала максимально комфортной и удобной.
+													a(href="#") Сообщить об ошибке в описании
+												a(href="#").c-product-tab-content__description-img.h-object-fit
+													img(src="https://banners.s1.citilink.ru/nw_banner_4_03721_A_1619790516.jpg" alt="")
+						.c-product__tab-content.c-product-tab-content
+							.container
+								.row
+									.col-xl-4
+										.c-product-tab-content__info
+											.c-product-tab-content__info-head
+												h2.c-product-tab-content__title Популярный отзыв
+												a(href="#").c-product-tab-content__more Все отзывы
+									.col-xl-16
+										.c-product-tab-content__wrapper
+											.c-product-tab-content__main-review.c-product-tab-content-main-review
+												.c-product-tab-content-main-review__head
+													.c-product-tab-content-main-review__user
+														+svg('icon-credit')
+														span.name Илья
+														+svg('icon-star')
+														span.star 4
+													span.date 17 июня
+												.c-product-tab-content-main-review__main
+													.c-product-tab-content-main-review__text
+														p Вчера получил кресло, радости не было предела. Но, что хочу заметить сразу, в инструкции был огромный косяк - перепутаны местамии подлокотники и механизмы рычагов, сторонами перепутаны, в инструкции все как будто в зеркальном отражении, и болтик под пластиковые заглушки коротковаты, могли бы быть подлиннее, ими трудновато попасть в пазы. Немного пока непривычно, пересел с обычного офисного кресла, которое использовал несколько лет. Материал приятный, в прохладный день сидеть жарковато, летом, думаю, будет ещё жарче, так что лучше купите тканевую подстилку под пятую точку :) Ещё минус звезда, потому что не раскладывается до конца на 180 градусов, но, это и не нужно вовсе, спинка перевешивает и можно упасть прям на нее вместе с остальной частью кресла (проверил, чуть не улетел). Колеса не прорезинены, ход очень мягкий. В остальном ,покупкой доволен. Спасибо Ситилинк!
+													a(href="#").read-more Читать отзыв целиком
+												.c-product-tab-content-main-review__info.c-product__rate.c-product-rate
+													.c-product-rate__left
+														.c-product-rate__head
+															h3 Рейтинг
+															.c-product-rate__star
+																+svg('icon-star')
+																span 4,8
+														span.c-product-rate__count 6 отзывов
+														button(type="button").c-product-rate__review-btn.e-btn.e-btn--accent-border Написать отзыв
+													.c-product-rate__right
+														.c-product-rate__row 
+															span 5 
+															.c-product-rate__line
+																.c-product-rate__line-back(style='width: 80%')
+															span 5
+														.c-product-rate__row 
+															span 4
+															.c-product-rate__line
+																.c-product-rate__line-back(style='width: 50%')
+															span 1
+														.c-product-rate__row 
+															span 3
+															.c-product-rate__line 
+															span 0
+														.c-product-rate__row 
+															span 2
+															.c-product-rate__line 
+																.c-product-rate__line-back(style='width: 20%')
+															span 0
+														.c-product-rate__row 
+															span 1
+															.c-product-rate__line 
+															span 0
+					#characteristics.tab-pane.fade(role='tabpanel' aria-labelledby='characteristics-tab')
+						.c-product__tab-content.c-product-tab-content
+							.container
+								.row
+									.col-xl-12.offset-xl-4
+										.c-product__characteristics.c-product-characteristics
+											.c-product-characteristics__group 
+												h3.c-product-characteristics__title Конструкция
+												ul.c-product-characteristics__list.h-reset-list 
+													li.c-product-characteristics__item 
+														.c-product-characteristics__col
+															span.type Тип установки
+															button(type="button") 
+																+svg('icon-question')
+														.c-product-characteristics__col
+															span на колесиках
+													li.c-product-characteristics__item 
+														.c-product-characteristics__col
+															span.type Ограничение по весу
+															button(type="button") 
+																+svg('icon-question')
+														.c-product-characteristics__col
+															span 150 кг
+													li.c-product-characteristics__item 
+														.c-product-characteristics__col
+															span.type Тип механизма качания
+														.c-product-characteristics__col
+															span с фиксацией в вертикальном положении
+											.c-product-characteristics__group 
+												h3.c-product-characteristics__title Особенности
+												ul.c-product-characteristics__list.h-reset-list 
+													li.c-product-characteristics__item 
+														.c-product-characteristics__col
+															span.type Особенности 
+															button(type="button") 
+																+svg('icon-question')
+														.c-product-characteristics__col
+															span Эргономичная конструкция, в комплекте подушка для поясницы, подушка для шеи/головы
+											.c-product-characteristics__group 
+												h3.c-product-characteristics__title Цвета
+												ul.c-product-characteristics__list.h-reset-list 
+													li.c-product-characteristics__item 
+														.c-product-characteristics__col
+															span.type Цвет обивки 
+														.c-product-characteristics__col
+															span черный/красный
+													li.c-product-characteristics__item 
+														.c-product-characteristics__col
+															span.type Цвет (спинка)
+														.c-product-characteristics__col
+															span черный/красный
+											p.c-product-characteristics__desc Производитель оставляет за собой право изменять характеристики товара, его внешний вид и комплектность без предварительного уведомления продавца.
+											p.c-product-characteristics__desc Предложение по продаже товара действительно в течение срока наличия этого товара на складе.
+					#accessories.tab-pane.fade(role='tabpanel' aria-labelledby='accessories-tab')
+						.c-product__tab-content.c-product-tab-content
+							.c-product__accessories.c-product-accessories
+								.container
+									.row
+										.col-xl-4
+											.c-product-accessories__category.c-product-accessories-category
+												h3.c-product-accessories-category__title Аксессуары
+												ul.h-reset-list.c-product-accessories-category__list
+													li.c-product-accessories-category__item
+														a(href="#").c-product-accessories-category__link Все аксессуары
+													li.c-product-accessories-category__item
+														a(href="#").c-product-accessories-category__link Аксессуары для кресел
+													li.c-product-accessories-category__item
+														a(href="#").c-product-accessories-category__link Коврики под кресло
+													li.c-product-accessories-category__item
+														a(href="#").c-product-accessories-category__link Офисная эргономика
+													li.c-product-accessories-category__item
+														a(href="#").c-product-accessories-category__link.active Компьютерные столы
+										.col-xl-16
+											.c-product-accessories__list
+												.row 
+													.col-lg-5.col-10
+														+c-product-tile({
+															img: {
+																custom_class: 'h-object-fit c-product-tile__img',
+																img:'products/1.jpg'
+															},
+															label: 'Акция',
+															labelClass: 'orange',
+															oldPrice: '9000',
+															crownPrice: '5050',
+															title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+															price: '63900',
+															currency: '₽',
+															addBtn: true
+														})
+													.col-lg-5.col-10
+														+c-product-tile({
+															img: {
+																custom_class: 'h-object-fit c-product-tile__img',
+																img:'products/1.jpg'
+															},
+															label: 'Акция',
+															labelClass: 'orange',
+															oldPrice: '9000',
+															crownPrice: '5050',
+															title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+															price: '63900',
+															currency: '₽',
+															addBtn: true
+														})
+													.col-lg-5.col-10
+														+c-product-tile({
+															img: {
+																custom_class: 'h-object-fit c-product-tile__img',
+																img:'products/1.jpg'
+															},
+															label: 'Акция',
+															labelClass: 'orange',
+															oldPrice: '9000',
+															crownPrice: '5050',
+															title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+															price: '63900',
+															currency: '₽',
+															addBtn: true
+														})
+													.col-lg-5.col-10
+														+c-product-tile({
+															img: {
+																custom_class: 'h-object-fit c-product-tile__img',
+																img:'products/1.jpg'
+															},
+															label: 'Акция',
+															labelClass: 'orange',
+															oldPrice: '9000',
+															crownPrice: '5050',
+															title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+															price: '63900',
+															currency: '₽',
+															addBtn: true
+														})
+													.col-lg-5.col-10
+														+c-product-tile({
+															img: {
+																custom_class: 'h-object-fit c-product-tile__img',
+																img:'products/1.jpg'
+															},
+															label: 'Акция',
+															labelClass: 'orange',
+															oldPrice: '9000',
+															crownPrice: '5050',
+															title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+															price: '63900',
+															currency: '₽',
+															addBtn: true
+														})
+													.col-lg-5.col-10
+														+c-product-tile({
+															img: {
+																custom_class: 'h-object-fit c-product-tile__img',
+																img:'products/1.jpg'
+															},
+															label: 'Акция',
+															labelClass: 'orange',
+															oldPrice: '9000',
+															crownPrice: '5050',
+															title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+															price: '63900',
+															currency: '₽',
+															addBtn: true
+														})
+													.col-lg-5.col-10
+														+c-product-tile({
+															img: {
+																custom_class: 'h-object-fit c-product-tile__img',
+																img:'products/1.jpg'
+															},
+															label: 'Акция',
+															labelClass: 'orange',
+															oldPrice: '9000',
+															crownPrice: '5050',
+															title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+															price: '63900',
+															currency: '₽',
+															addBtn: true
+														})
+													.col-lg-5.col-10
+														+c-product-tile({
+															img: {
+																custom_class: 'h-object-fit c-product-tile__img',
+																img:'products/1.jpg'
+															},
+															label: 'Акция',
+															labelClass: 'orange',
+															oldPrice: '9000',
+															crownPrice: '5050',
+															title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+															price: '63900',
+															currency: '₽',
+															addBtn: true
+														})
+												.row
+													.c-product-accessories__show-more 
+														button(type="button").e-btn--accent-filled.e-btn.e-btn--size-m  Показать ещё
+					#service.tab-pane.fade(role='tabpanel' aria-labelledby='service-tab')
+						.c-product__tab-content.c-product-tab-content
+							.c-product__service.c-product-service
+								.container
+									.row
+										.col-xl-4
+											.c-product-tab-content__info
+												.c-product-tab-content__info-head
+													h2.c-product-tab-content__title Услуги
+										.col-xl-16
+											.c-product-tab-content__wrapper
+												.c-product-service__group 
+													span.c-product-service__ttl Услуги установки
+													.c-product-service__row
+														+form-group({
+															wrapper_class: "input-check",
+															checkbox: true,
+															type: 'checkbox',
+															value: 'Сборка кресла или стула'
+														})
+														.c-product-service__actions
+															.price 
+																span от 18030
+																span.rub ₽
+												.c-product-service__group 
+													span.c-product-service__ttl Услуги установки
+													.c-product-service__row
+														+form-group({
+															wrapper_class: "input-check",
+															checkbox: true,
+															type: 'checkbox',
+															value: 'Сборка кресла или стула'
+														})
+														.c-product-service__actions
+															.price 
+																span от 1830
+																span.rub ₽
+					#overviews.tab-pane.fade(role='tabpanel' aria-labelledby='overviews-tab')
+						.c-product__tab-content.c-product-tab-content
+							.c-product__overviews.c-product-overviews
+								.container
+									.row
+										.col-xl-4
+											.c-product-tab-content__info
+												.c-product-tab-content__info-head
+													span Ситилинк 
+														a(href="#") начисляет 
+														| за обзор от 200 до 10 000 бонусов на клубную карту
+													button(type="button").e-btn--accent-border.e-btn Добавить обзор
+										.col-xl-16
+											.c-product-tab-content__wrapper
+												.c-product-overviews__list
+													a(href="#").c-product-overviews__item.c-product-overviews-item
+														.c-product-overviews-item__head
+															.c-product-overviews-item__line 
+																span.c-product-overviews-item__name Crass
+																span.c-product-overviews-item__date  12 октября 2020
+															h3.c-product-overviews-item__title Краткий обзор STEELSERIES Rival 3
+															.c-product-overviews-item__views 
+																+svg('icon-eyes')
+																span 1279
+														.c-product-overviews-item__desc 
+															p Появилась необходимость покупки новой мыши, ранее со «стилами» дело не имел и начитавшись положительных отзывов о ней, решил остановиться именно на этой модели. Мышка поставляется в минималистичной упаковке. Небольшая коробочка 15,5×8,5×4,5см. Вся полезная информация о продукте есть на упаковке.Внутри ещё одна картонная упаковка...
+														button(type="submit").c-product-overviews-item__more Читать обзор полностью
+													a(href="#").c-product-overviews__item.c-product-overviews-item
+														.c-product-overviews-item__head
+															.c-product-overviews-item__line 
+																span.c-product-overviews-item__name Crass
+																span.c-product-overviews-item__date  12 октября 2020
+															h3.c-product-overviews-item__title Краткий обзор STEELSERIES Rival 3
+															.c-product-overviews-item__views 
+																+svg('icon-eyes')
+																span 1279
+														.c-product-overviews-item__desc 
+															p Появилась необходимость покупки новой мыши, ранее со «стилами» дело не имел и начитавшись положительных отзывов о ней, решил остановиться именно на этой модели. Мышка поставляется в минималистичной упаковке. Небольшая коробочка 15,5×8,5×4,5см. Вся полезная информация о продукте есть на упаковке.Внутри ещё одна картонная упаковка...
+														button(type="submit").c-product-overviews-item__more Читать обзор полностью
+					#reviews.tab-pane.fade(role='tabpanel' aria-labelledby='reviews-tab')
+						.c-product__tab-content.c-product-tab-content
+							.c-product__reviews.c-product-reviews
+								.container
+									.row
+										.col-xl-4
+											.c-product-tab-content__info
+												.c-product-rate
+													.c-product-rate__left
+														.c-product-rate__star
+															+svg('icon-star')
+															span 4,8
+														span.c-product-rate__count 6 отзывов
+													.c-product-rate__right
+														.c-product-rate__row 
+															span 5 
+															.c-product-rate__line
+																.c-product-rate__line-back(style='width: 80%')
+															span 5
+														.c-product-rate__row 
+															span 4
+															.c-product-rate__line
+																.c-product-rate__line-back(style='width: 50%')
+															span 1
+														.c-product-rate__row 
+															span 3
+															.c-product-rate__line 
+															span 0
+														.c-product-rate__row 
+															span 2
+															.c-product-rate__line 
+																.c-product-rate__line-back(style='width: 20%')
+															span 0
+														.c-product-rate__row 
+															span 1
+															.c-product-rate__line 
+															span 0
+													button(type="button").c-product-rate__review-btn.e-btn.e-btn--accent-border Написать отзыв
+													a(href="#").c-product-rate__rules  Правила написания отзывов
+										.col-xl-16
+											.c-product-tab-content__wrapper
+												nav.c-product-reviews__nav
+													#reviews-nav-tab.nav(role='tablist')
+														button#nav-1-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#nav-1' type='button' role='tab' aria-controls='nav-1' aria-selected='true') Сначало полезные
+														button#nav-2-tab.nav-link(data-bs-toggle='tab' data-bs-target='#nav-2' type='button' role='tab' aria-controls='nav-2' aria-selected='false') Новые
+														button#nav-3-tab.nav-link(data-bs-toggle='tab' data-bs-target='#nav-3' type='button' role='tab' aria-controls='nav-3' aria-selected='false') Лучшие оценки
+														button#nav-4-tab.nav-link(data-bs-toggle='tab' data-bs-target='#nav-4' type='button' role='tab' aria-controls='nav-4' aria-selected='false') Худшие оценки
+												#reviews-nav-tabContent.tab-content
+													#nav-1.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nav-1-tab')
+														.c-product-reviews__list 
+															.c-product-reviews__item.c-product-reviews-item.c-product-reviews-item--main
+																.c-product-reviews-item__head
+																	.c-product-reviews-item__tags
+																		.c-product-reviews-item__tag Лучший отзыв
+																		.c-product-reviews-item__tag Куплено в cитилинк
+																	.c-product-reviews-item__user
+																		.c-product-reviews-item__user-actions
+																			.c-product-reviews-item__user-img
+																				+svg('icon-ava')
+																			a(href="#").c-product-reviews-item__user-name Максим
+																			.c-product-reviews-item__user-star
+																				+svg('icon-star')
+																				span 5
+																		span.c-product-reviews-item__date 15 декабря 2020
+																.c-product-reviews-item__body
+																	.c-product-reviews-item__group 
+																		.c-product-reviews-item__ttl Достоинства
+																		.c-product-reviews-item__desc Приятная на ощупь ткань, много разных регулировок, колесики хорошо фиксируются и не шуршат по ламинату при движении, удобные подлокотники, механизм качания.
+																	.c-product-reviews-item__group 
+																		.c-product-reviews-item__ttl Недостатки
+																		.c-product-reviews-item__desc В комплекте не было болтов для крепления пластмассовых крышек на сгибах (облицовка у механизма наклона).
+																	.c-product-reviews-item__group 
+																		.c-product-reviews-item__ttl Комментарий
+																		.c-product-reviews-item__desc Кресло супер! Удобное, приятное на ощупь, не скрипит, по полу не шоркает. Подушки хорошо держатся благодаря ремням. Подлокотники регулируются как нужно и главное, что они удобные.
+																.c-product-reviews-item__footer
+																	button(type="button")
+																		+svg('icon-like')
+																		span 2
+																	button(type="button")
+																		+svg('icon-dislike')
+																		span 1
+															.c-product-reviews__item.c-product-reviews-item
+																.c-product-reviews-item__head
+																	.c-product-reviews-item__tags
+																		.c-product-reviews-item__tag Куплено в cитилинк
+																	.c-product-reviews-item__user
+																		.c-product-reviews-item__user-actions
+																			.c-product-reviews-item__user-img
+																				+svg('icon-ava')
+																			a(href="#").c-product-reviews-item__user-name Максим
+																			.c-product-reviews-item__user-star
+																				+svg('icon-star')
+																				span 5
+																		span.c-product-reviews-item__date 15 декабря 2020
+																.c-product-reviews-item__body
+																	.c-product-reviews-item__group 
+																		.c-product-reviews-item__ttl Достоинства
+																		.c-product-reviews-item__desc Приятная на ощупь ткань, много разных регулировок, колесики хорошо фиксируются и не шуршат по ламинату при движении, удобные подлокотники, механизм качания.
+																	.c-product-reviews-item__group 
+																		.c-product-reviews-item__ttl Недостатки
+																		.c-product-reviews-item__desc В комплекте не было болтов для крепления пластмассовых крышек на сгибах (облицовка у механизма наклона).
+																	.c-product-reviews-item__group 
+																		.c-product-reviews-item__ttl Комментарий
+																		.c-product-reviews-item__desc Кресло супер! Удобное, приятное на ощупь, не скрипит, по полу не шоркает. Подушки хорошо держатся благодаря ремням. Подлокотники регулируются как нужно и главное, что они удобные.
+																.c-product-reviews-item__footer
+																	button(type="button")
+																		+svg('icon-like')
+																		span 2
+																	button(type="button")
+																		+svg('icon-dislike')
+																		span 1
+													#nav-2.tab-pane.fade(role='tabpanel' aria-labelledby='nav-2-tab')
+													#nav-3.tab-pane.fade(role='tabpanel' aria-labelledby='nav-3-tab')
+													#nav-4.tab-pane.fade(role='tabpanel' aria-labelledby='nav-3-tab')
+					#faq.tab-pane.fade(role='tabpanel' aria-labelledby='faq-tab')
+						.c-product__tab-content.c-product-tab-content
+							.c-product__faq.c-product-faq
+								.container
+									.row
+										.col-xl-4
+											.c-product-faq__info.c-product-faq-info 
+												span Задавайте вопросы и эксперты помогут вам найти ответ
+												button(type="button").e-btn--accent-border.e-btn Новый вопрос
+
+										.col-xl-16
+											.c-product-faq__list
+												.c-product-faq__group 
+													.c-product-faq__item.c-product-faq-item
+														.c-product-faq-item__head
+															.c-product-faq-item__user 
+																.c-product-faq-item__user-img 
+																	+svg('icon-ava')
+																a(href="#").c-product-faq-item__user-name Anton 
+															span.c-product-faq-item__date 1 июля 2020
+														p.c-product-faq-item__desc Владельцы данного кресла,подскажите колёсики прорезинены?
+														.c-product-faq-item__footer
+															button Ответить 
+															button.c-product-faq-item__report Пожаловаться 
+													.c-product-faq__item.c-product-faq-item.c-product-faq-item--answer
+														.c-product-faq-item__head
+															.c-product-faq-item__user 
+																.c-product-faq-item__user-img 
+																	+svg('icon-ava')
+																a(href="#").c-product-faq-item__user-name Anton 
+															span.c-product-faq-item__date 1 июля 2020
+														p.c-product-faq-item__desc Владельцы данного кресла,подскажите колёсики прорезинены?
+														.c-product-faq-item__footer
+															button Ответить 
+															button.c-product-faq-item__report Пожаловаться 
+													.c-product-faq__item.c-product-faq-item.c-product-faq-item--answer
+														.c-product-faq-item__head
+															.c-product-faq-item__user 
+																.c-product-faq-item__user-img 
+																	+svg('icon-ava')
+																a(href="#").c-product-faq-item__user-name Anton 
+															span.c-product-faq-item__date 1 июля 2020
+														p.c-product-faq-item__desc Владельцы данного кресла,подскажите колёсики прорезинены?
+														.c-product-faq-item__footer
+															button Ответить 
+															button.c-product-faq-item__report Пожаловаться 
+													.c-product-faq__item.c-product-faq-item.c-product-faq-item--answer
+														.c-product-faq-item__head
+															.c-product-faq-item__user 
+																.c-product-faq-item__user-img 
+																	+svg('icon-ava')
+																a(href="#").c-product-faq-item__user-name Anton 
+															span.c-product-faq-item__date 1 июля 2020
+														p.c-product-faq-item__desc Владельцы данного кресла,подскажите колёсики прорезинены?
+														.c-product-faq-item__footer
+															button Ответить 
+															button.c-product-faq-item__report Пожаловаться 
+												.c-product-faq__group 
+													.c-product-faq__item.c-product-faq-item
+														.c-product-faq-item__head
+															.c-product-faq-item__user 
+																.c-product-faq-item__user-img 
+																	+svg('icon-ava')
+																a(href="#").c-product-faq-item__user-name Anton 
+															span.c-product-faq-item__date 1 июля 2020
+														p.c-product-faq-item__desc Владельцы данного кресла,подскажите колёсики прорезинены?
+														.c-product-faq-item__footer
+															button Ответить 
+															button.c-product-faq-item__report Пожаловаться 
+													.c-product-faq__item.c-product-faq-item.c-product-faq-item--answer
+														.c-product-faq-item__head
+															.c-product-faq-item__user 
+																.c-product-faq-item__user-img 
+																	+svg('icon-ava')
+																a(href="#").c-product-faq-item__user-name Anton 
+															span.c-product-faq-item__date 1 июля 2020
+														p.c-product-faq-item__desc Владельцы данного кресла,подскажите колёсики прорезинены?
+														.c-product-faq-item__footer
+															button Ответить 
+															button.c-product-faq-item__report Пожаловаться 
+					#docs.tab-pane.fade(role='tabpanel' aria-labelledby='docs-tab')
+						.c-product__tab-content.c-product-tab-content
+							.c-product__docs.c-product-docs
+								.container
+									.row
+										.col-xl-4
+											.c-product-tab-content__info
+												.c-product-tab-content__info-head
+													h2.c-product-tab-content__title Сертификаты
+										.col-xl-16
+											.c-product-tab-content__wrapper
+												.c-product-docs__list
+													a(href="https://items-certificates.s1.citilink.ru/CSR067140_0_1010047848.jpg").c-product-docs__item
+														+svg('icon-doc')
+														span ЕАЭС N RU Д-RU.ДМ46.В.00278/20.jpg
+													a(href="https://items-certificates.s1.citilink.ru/CSR067140_0_1010047848.jpg").c-product-docs__item
+														+svg('icon-doc')
+														span ЕАЭС N RU Д-RU.ДМ46.В.00278/20.jpg
+													a(href="https://items-certificates.s1.citilink.ru/CSR067140_0_1010047848.jpg").c-product-docs__item
+														+svg('icon-doc')
+														span ЕАЭС N RU Д-RU.ДМ46.В.00278/20.jpg

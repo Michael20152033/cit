@@ -1,0 +1,28 @@
+mixin c-configurator-box(data)
+	.c-configurator-box
+		.container
+			.row
+				.col-xl-4
+					.c-configurator-box__first
+						span.c-configurator-box__title Собрать компьютер
+						a(href="#").c-configurator-box__action.e-btn.e-btn--accent-border.e-btn--size-s  Создать свою сборку
+				.col-xl-12
+					.c-configurator-box__main
+						span.c-configurator-box__title Готовые сборки
+						.c-configurator-box__list
+							a(href="#").c-configurator-box__item
+								+svg('icon-pacman')
+								span Игровые
+							a(href="#").c-configurator-box__item
+								+svg('icon-house')
+								span Для дома
+							a(href="#").c-configurator-box__item
+								+svg('icon-office')
+								span Для офиса
+							a(href="#").c-configurator-box__item
+								+svg('icon-design')
+								span Для дизайна
+				.col-xl-4
+					.c-configurator-box__try
+						span.c-configurator-box__title Попробуйте!
+						a(href="#").c-configurator-box__action.e-btn.e-btn--accent-border.e-btn--size-s.e-btn--wide   Создать свою сборку

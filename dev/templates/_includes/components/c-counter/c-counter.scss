@@ -1,0 +1,19 @@
+.c-counter {
+  &__btn {
+    .icon {
+      color: #5d5d64;
+    }
+  }
+  &__input {
+    width: 2.4rem;
+    margin: 0 .8rem;
+    font-size: 1.4rem;
+    border: none;
+    border-bottom: 1px solid #b3b3b7;
+    text-align: center;
+    &:focus {
+      border-bottom: 1px solid $accent;
+      outline: none;
+    }
+  }
+}

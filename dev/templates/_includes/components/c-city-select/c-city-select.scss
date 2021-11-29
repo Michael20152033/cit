@@ -1,0 +1,15 @@
+.c-city-select {
+  &__toggle {
+    position: relative;
+    font-size: 1.4rem;
+    display: flex;
+    &:after {
+      content: "\203A";
+      position: absolute;
+      top: 50%;
+      right: -1.2rem;
+      transform: translateY(-50%) rotate(90deg);
+      color: $accent;
+    }
+  }
+}

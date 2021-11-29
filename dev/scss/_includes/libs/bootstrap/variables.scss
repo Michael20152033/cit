@@ -1,0 +1,83 @@
+// BOOTSTRAP VARIABLES
+
+// Body
+
+// https://chir.ag/projects/name-that-color/#6195ED
+
+$mirage:      #151528;
+$accent:      #fe7200;
+$geyser:      #DCE1E6;
+$mystic:      #E6EBEF;
+$aquaHaze:    #F1F4F7;
+
+$body-bg:    white;
+$body-color: $mirage;
+
+// Links
+
+$link-color:                              $mirage;
+$link-decoration:                         none;
+$link-hover-color:                        $accent;
+$link-hover-decoration:                   none;
+
+
+// Typography
+
+$font-family-ptroot:          'PTRoot', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       $font-family-ptroot;
+$font-family-base:            $font-family-ptroot;
+
+$font-size-base:              1.6rem;
+
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5;
+
+$h1-font-size:                3.6rem;
+$h2-font-size:                3.2rem;
+$h3-font-size:                2.4rem;
+$h4-font-size:                1.8rem;
+$h5-font-size:                1.6rem;
+$h6-font-size:                1.4rem;
+
+$headings-margin-bottom:      $spacer / 2 !default;
+$headings-font-family:        'PTRoot', sans-serif;
+$headings-font-weight:        700;
+$headings-line-height:        1.15;
+$headings-color:              $mirage !default;
+
+
+// Grid columns
+$grid-gutter-width:           1rem;
+$container-padding-x:         2rem;
+$grid-columns:                20;
+$grid-row-columns:            1;
+
+
+
+
+// Grid breakpoints
+
+$grid-breakpoints: (
+  xx: 0,
+  xs: 490px,
+  sm: 560px,
+  md: 768px,
+  semi-tablet: 992px,
+  lg: 1024px,
+  xl: 1280px,
+  semi-notebook: 1440px,
+  xxl: 1600px
+);
+
+$container-max-widths: (
+  xs: 460px,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1260px,
+  xxl: 1560px
+);
+
+
+

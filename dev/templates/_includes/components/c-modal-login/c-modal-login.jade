@@ -1,0 +1,115 @@
+mixin c-modal-login(data)
+  #loginModal(tabindex="-1").c-modal-login.modal.fade
+    .modal-dialog.c-modal-login__dialog
+      .modal-content
+        button(data-bs-toggle="modal" data-bs-target="#loginModal" type="button" id="modal-login__close").c-modal-login__close 
+          +svg('icon-close')
+        ul#myTab.nav.c-main-categories__tabs-nav.c-modal-login__tabs(role='tablist')
+          li.nav-item(role='presentation')
+            button#newCategories-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#login' type='button' role='tab' aria-controls='login' aria-selected='true') Вход
+          li.nav-item.del /
+          li.nav-item(role='presentation')
+            button#popularCategories-tab.nav-link(data-bs-toggle='tab' data-bs-target='#Autontefication' type='button' role='tab' aria-controls='Autontefication' aria-selected='false') Регистрация  
+
+
+        .tab-content(id="myTabContent")
+          #login.c-modal-login__login.tab-pane.active(role='tabpanel')
+
+            +form-group({
+              wrapper_class: "classic-input",
+              custom_class: "modal-input-form",
+
+              id: 'subscribe',
+              label: 'E-mail или телефон *',
+              svg: 'icon-back',
+              required: true,
+            })
+            +form-group({
+              wrapper_class: "classic-input",
+              custom_class: "modal-input-form",
+
+              id: 'subscribe',
+              type: "password",
+              label: 'Пароль *',
+              svg: 'icon-password',
+              required: true,
+              forgot: true,
+
+            })
+            +form-group({
+              wrapper_class: "classic-input",
+              custom_class: "modal-input-form",
+
+              id: 'subscribe',
+              type: "text",
+              label: 'Слово с картинки',
+              required: true,
+            })
+            .c-modal-login__image
+              +picture({
+                img:'modal/captcha.png'
+              })
+              a(href="#").c-modal-login__change Заменить картинку
+
+            button(type="submit").e-btn.e-btn--accent-filled.c-modal-login__btn Войти
+
+
+
+          #Autontefication.tab-pane.c-modal-login__autontefication(role="tabpanel")
+            +form-group({
+              wrapper_class: "classic-input",
+              custom_class: "modal-input-form",
+                id: 'subscribe',
+                label: 'Ваше Имя *',
+                svg: 'icon-back',
+                required: true,
+              })
+            +form-group({
+              wrapper_class: "classic-input",
+              custom_class: "modal-input-form",
+
+              id: 'subscribe',
+              label: 'Email *',
+              svg: 'icon-back',
+              required: true,
+            })
+            +form-group({
+              wrapper_class: "classic-input",
+              custom_class: "modal-input-form",
+
+              id: 'subscribe',
+              label: 'Телефон *',
+              svg: 'icon-back',
+              required: true,
+            })
+            button(type="submit").e-btn.e-btn--accent-filled.c-modal-login__btn Подтвердить номер телефона
+            span.c-modal-login__change Мы отправим вам смс с кодом
+            +form-group({
+              wrapper_class: "classic-input",
+              custom_class: "modal-input-form",
+
+              id: 'subscribe',
+              type: "password",
+              label: 'Придумайте пароль *',
+              svg: 'icon-password',
+              required: true,
+              description: true,
+              })
+            +form-group({
+              wrapper_class: "input-check",
+              type: 'checkbox',
+              value: 'Я юридическое лицо'
+            })
+            +form-group({
+              wrapper_class: "input-check",
+              type: 'checkbox',
+              value: 'Я хочу знать о скидках и акциях'
+            })
+            .c-modal-login__image
+              +picture({
+                img:'modal/captcha.png'
+              })
+              a(href="#").c-modal-login__change Заменить картинку
+            button(type="submit").e-btn.e-btn--accent-filled.c-modal-login__btn Зарегистрироваться
+          
+

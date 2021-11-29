@@ -1,0 +1,237 @@
+.c-decor-order {
+  .row {
+          @include media-breakpoint-down(md) {
+           flex-direction: column;
+          }
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__checkout {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  
+       @include media-breakpoint-down(lg) {
+          margin-top: 7rem;
+       }
+  }
+  &__content {
+    width: 50%;
+            @include media-breakpoint-down(lg) {
+             width: 100%;
+            }
+  }
+
+  &__block {
+    margin-bottom: 5rem;
+  }
+
+  &__name {
+    margin-bottom: 2rem;
+  }
+  &__text {
+    font-size: 14px;
+  
+    color: #b3b3b7;
+  }
+  &__verify {
+    width: 100%;
+    display: none;
+    margin-bottom: 2rem;
+  }
+  &__hidden {
+      width: 100%;
+      background: #fff8eb;
+      padding: 3rem;
+      padding-bottom: 1.7rem;
+  }
+  &__article {
+         @include media-breakpoint-down(lg) {
+          display: none;
+         }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+  }
+  &__form-wrap {
+    display: flex;
+  }
+  &__money {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+       .icon {
+         margin-left: 0.5rem;
+       }
+    font-weight: bold;
+         @include media-breakpoint-down(lg) {
+           display: none;
+        
+         }
+  }
+
+  &__btn {
+    background: #fff;
+    color: #000;
+    
+    border: 1px solid #dfdfe1;
+    padding: 20px 30px;
+   transition: none;
+   margin-right: 1.5rem;
+   margin-bottom: 1rem;
+    &:hover{
+      background: #fff;
+      color: #000;
+    }
+         @include media-breakpoint-down(sm) {
+         padding: 20px 10px;
+         }
+  }
+  &__btns {
+    margin: 0 0 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  &__titwrap {
+    margin-bottom: 2.5rem;
+  }
+  &__point {
+
+    border: 1px solid #dfdfe1;
+    display: none;
+     padding: 4.5rem 4.5rem 3rem;
+  }
+  &__relative {
+    position: relative;
+      display: inline-flex;
+      flex-direction: column;
+     
+      justify-content: center;
+  }
+  &__boxtitle {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &__comment {
+    margin-top: 3rem ;
+  }
+  &__tel {
+    display: none;
+  }
+  &__passport {
+    margin-bottom: 2rem;
+  }
+  &__choice {
+    display: none;
+  }
+  &__descrip {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  &__button {
+    margin: 1.5rem 0 4rem 0;
+    padding: 2.6rem 3rem;
+  }
+  &__img {
+    position: absolute;
+        position: absolute;
+
+        top: 0;
+        right: calc(100% + 25px);
+      
+        width: 30px;
+        height: 30px;
+        .icon {
+          width: 3em;
+          height: 2em;
+        }
+             @include media-breakpoint-down(md) {
+             display: none;
+             }
+  }
+  &__delivery {
+    display: none;
+  }
+  &-buy {
+    background: #f5f5f6;
+    width: 359px;
+    height: 100%;
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+        &__wrap {
+          border-bottom: 1px solid #dfdfe1;
+        }
+        &__name {
+          font-size: 24px;
+          margin-bottom: 2.5rem;
+        }
+        &__product {
+          margin-bottom: 0.5rem;
+          font-size: 14px;
+          font-weight: 500;
+        }
+        &__price {
+          font-size: 12px;
+          color: #5d5d64;
+        }
+        &__content {
+        padding:30px 55px 30px 30px;
+        }
+        &__end {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 1.6rem;
+          margin-bottom: 0.5rem;
+          flex-wrap: wrap;
+          color: #5d5d64;
+       
+        }
+        &__result {
+          font-size: 2.4rem;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          color: #151528;
+          .icon {
+            margin-left: 0.5rem;
+          }
+        }
+        &__shopping {
+          margin-bottom: 1.5rem;
+        }
+        &--mob {
+          display: none;
+            @include media-breakpoint-down(lg) {
+              display: block;
+              width: 100%;
+            }
+        }
+  }
+}
+.order-input {
+  width: 100%;
+  margin-right: 1rem;
+  padding-bottom: 4rem;
+  padding-top: 1.5rem;
+}
+.run{
+  display: block !important;
+}
+
+.actived {
+  border: 2px solid #fe7200;
+  font-weight: bold;
+
+}
+
+.check_value {
+  color: #000 !important;
+}

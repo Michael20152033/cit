@@ -1,0 +1,453 @@
+mixin c-catalog-list(data)
+    .c-catalog-list 
+        .container
+            .c-catalog-list__wrap 
+                h2.c-catalog-list__title Каталог
+                .c-catalog-list__row.row
+                    .c-catalog-list__icon.col-xl-5.col-md-10
+                        +svg('icon-phone')
+                        ul.c-catalog-list__col.col
+                            li.c-catalog-list__name 
+                                a.c-catlog__link Смартфоны и гаджеты     
+                            li.c-catalog-list__item  
+                                a.c-catalog__link Смартфоны  
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Сотовые телефоны   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Планшеты   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Гаджеты   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Аксессуары для планшетов   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Аксессуары для смартфонов   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Электронные кники и аксессуары   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Наушники   
+                            ul(id="smartHid").c-catalog-list__hidden.hidden
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Зарядные устройства       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Усилители для наушников       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Аксессуары для наушников       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Аксессуары для наушников    
+                             li.c-catalog-list__item 
+                                button(id="smartBtn" type="button").c-catalog-list__button Показать все     
+                    .c-catalog-list__icon.col-xl-5.col-md-10
+                        +svg('icon-note')
+                        ul.c-catalog-list__col.col
+                            li.c-catalog-list__name 
+                                a.c-catlog__link Ноутбуки и компьютеры  
+                                    
+                            li.c-catalog-list__item  
+                                a.c-catalog__link Ноутбуки  
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Ультрабуки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Ноутбуки-трансформеры   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Моноблоки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Компьютеры   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Компьютеры Ситилинк   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Микрокомпьютеры и аксессуары   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Комплектующие для ПК   
+                           
+                            ul(id="pcHid").c-catalog-list__hidden.hidden
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Жесткие диски и SSD       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Мониторы       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Сетевые хранилища NAS       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Оргтехника    
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Манипуляторы и устройства ввода     
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Носители информации     
+                            li.c-catalog-list__item 
+                                button(id="pcBtn" type="button").c-catalog-list__button Показать все             
+                    .c-catalog-list__icon.col-xl-5.col-md-10
+                        +svg('icon-tv')
+                        ul.c-catalog-list__col.col
+                            li.c-catalog-list__name 
+                                a.c-catlog__link Телевизоры, Аудио-видео, HI-FI  
+                            li.c-catalog-list__item  
+                                a.c-catalog__link Телевизоры  
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Техника HI-FI   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Cпутниковое и цифровое ТВ   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Видеотехника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Аудиотехника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Проекторы и экраны   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link LED панели   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Наушники  
+                             
+                             ul(id="tvHid").c-catalog-list__hidden.hidden
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Аксессуары для телевизоров       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Музыкальные инструменты       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Кронштейны       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Аксессуары для LFD-панелей    
+                            
+                            li.c-catalog-list__item 
+                            button(id="tvBtn" type="button").c-catalog-list__button Показать все     
+                    .c-catalog-list__icon.col-xl-5.col-md-10
+                        +svg('icon-life')
+                        ul.c-catalog-list__col.col
+                            li.c-catalog-list__name 
+                                a.c-catlog__link Бытовая техника для дома и кухни  
+                                    
+                            li.c-catalog-list__item  
+                                a.c-catalog__link Крупная бытовая техника  
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Встраиваемая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Вытяжки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кофемашины, Кофеварки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Мелкая бытовая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Принадлежности для бытовой техники   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Посуда   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кондиционеры   
+                            ul(id="techHid").c-catalog-list__hidden.hidden
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Техника для дома       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Обогреватели       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Климатическая техника       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Водонагреватели    
+                            
+                            li.c-catalog-list__item 
+                            button(id="techBtn" type="button").c-catalog-list__button Показать все
+                    .c-catalog-list__icon.col-xl-5.col-md-10
+                    
+                        +svg('icon-build')
+                        ul.c-catalog-list__col.col
+                            li.c-catalog-list__name 
+                                a.c-catlog__link Бытовая техника для дома и кухни  
+                                    
+                            li.c-catalog-list__item  
+                                a.c-catalog__link Крупная бытовая техника  
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Встраиваемая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Вытяжки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кофемашины, Кофеварки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Мелкая бытовая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Принадлежности для бытовой техники   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Посуда   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кондиционеры   
+                            ul(id="techHid").c-catalog-list__hidden.hidden
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Техника для дома       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Обогреватели       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Климатическая техника       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Водонагреватели    
+                            
+                            li.c-catalog-list__item 
+                            button(id="techBtn" type="button").c-catalog-list__button Показать все
+                    .c-catalog-list__icon.col-xl-5.col-md-10
+                        +svg('icon-house')
+                        ul.c-catalog-list__col.col
+                            li.c-catalog-list__name 
+                                a.c-catlog__link Бытовая техника для дома и кухни  
+                                    
+                            li.c-catalog-list__item  
+                                a.c-catalog__link Крупная бытовая техника  
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Встраиваемая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Вытяжки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кофемашины, Кофеварки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Мелкая бытовая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Принадлежности для бытовой техники   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Посуда   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кондиционеры   
+                            ul(id="techHid").c-catalog-list__hidden.hidden
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Техника для дома       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Обогреватели       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Климатическая техника       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Водонагреватели    
+                            
+                            li.c-catalog-list__item 
+                            button(id="techBtn" type="button").c-catalog-list__button Показать все
+                    .c-catalog-list__icon.col-xl-5.col-md-10
+                        +svg('icon-photo')
+                        ul.c-catalog-list__col.col
+                            li.c-catalog-list__name 
+                                a.c-catlog__link Бытовая техника для дома и кухни  
+                                    
+                            li.c-catalog-list__item  
+                                a.c-catalog__link Крупная бытовая техника  
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Встраиваемая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Вытяжки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кофемашины, Кофеварки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Мелкая бытовая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Принадлежности для бытовой техники   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Посуда   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кондиционеры   
+                            ul(id="techHid").c-catalog-list__hidden.hidden
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Техника для дома       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Обогреватели       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Климатическая техника       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Водонагреватели    
+                            
+                            li.c-catalog-list__item 
+                            button(id="techBtn" type="button").c-catalog-list__button Показать все
+                    .c-catalog-list__icon.col-xl-5.col-md-10
+                        +svg('icon-auto')
+                        ul.c-catalog-list__col.col
+                            li.c-catalog-list__name 
+                                a.c-catlog__link Бытовая техника для дома и кухни  
+                                    
+                            li.c-catalog-list__item  
+                                a.c-catalog__link Крупная бытовая техника  
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Встраиваемая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Вытяжки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кофемашины, Кофеварки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Мелкая бытовая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Принадлежности для бытовой техники   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Посуда   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кондиционеры   
+                            ul(id="techHid").c-catalog-list__hidden.hidden
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Техника для дома       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Обогреватели       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Климатическая техника       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Водонагреватели    
+                            
+                            li.c-catalog-list__item 
+                            button(id="techBtn" type="button").c-catalog-list__button Показать все
+                    .c-catalog-list__icon.col-xl-5.col-md-10
+                        +svg('icon-office')
+                        ul.c-catalog-list__col.col
+                            li.c-catalog-list__name 
+                                a.c-catlog__link Бытовая техника для дома и кухни  
+                                    
+                            li.c-catalog-list__item  
+                                a.c-catalog__link Крупная бытовая техника  
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Встраиваемая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Вытяжки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кофемашины, Кофеварки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Мелкая бытовая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Принадлежности для бытовой техники   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Посуда   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кондиционеры   
+                            ul(id="techHid").c-catalog-list__hidden.hidden
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Техника для дома       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Обогреватели       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Климатическая техника       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Водонагреватели    
+                            
+                            li.c-catalog-list__item 
+                            button(id="techBtn" type="button").c-catalog-list__button Показать все
+                    .c-catalog-list__icon.col-xl-5.col-md-10
+                        +svg('icon-beauty')
+                        ul.c-catalog-list__col.col
+                            li.c-catalog-list__name 
+                                a.c-catlog__link Бытовая техника для дома и кухни  
+                                    
+                            li.c-catalog-list__item  
+                                a.c-catalog__link Крупная бытовая техника  
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Встраиваемая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Вытяжки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кофемашины, Кофеварки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Мелкая бытовая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Принадлежности для бытовой техники   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Посуда   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кондиционеры   
+                            ul(id="techHid").c-catalog-list__hidden.hidden
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Техника для дома       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Обогреватели       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Климатическая техника       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Водонагреватели    
+                            
+                            li.c-catalog-list__item 
+                            button(id="techBtn" type="button").c-catalog-list__button Показать все
+                    .c-catalog-list__icon.col-xl-5.col-md-10
+                        +svg('icon-kind')
+                        ul.c-catalog-list__col.col
+                            li.c-catalog-list__name 
+                                a.c-catlog__link Бытовая техника для дома и кухни  
+                                    
+                            li.c-catalog-list__item  
+                                a.c-catalog__link Крупная бытовая техника  
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Встраиваемая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Вытяжки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кофемашины, Кофеварки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Мелкая бытовая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Принадлежности для бытовой техники   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Посуда   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кондиционеры   
+                            ul(id="techHid").c-catalog-list__hidden.hidden
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Техника для дома       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Обогреватели       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Климатическая техника       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Водонагреватели    
+                            
+                            li.c-catalog-list__item 
+                            button(id="techBtn" type="button").c-catalog-list__button Показать все
+                    .c-catalog-list__icon.col-xl-5.col-md-10
+                        +svg('icon-sport')
+                        ul.c-catalog-list__col.col
+                            li.c-catalog-list__name 
+                                a.c-catlog__link Бытовая техника для дома и кухни  
+                                    
+                            li.c-catalog-list__item  
+                                a.c-catalog__link Крупная бытовая техника  
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Встраиваемая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Вытяжки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кофемашины, Кофеварки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Мелкая бытовая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Принадлежности для бытовой техники   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Посуда   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кондиционеры   
+                            ul(id="techHid").c-catalog-list__hidden.hidden
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Техника для дома       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Обогреватели       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Климатическая техника       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Водонагреватели    
+                            
+                            li.c-catalog-list__item 
+                            button(id="techBtn" type="button").c-catalog-list__button Показать все
+                    .c-catalog-list__icon.col-xl-5.col-md-10
+                        +svg('icon-sport')
+                        ul.c-catalog-list__col.col
+                            li.c-catalog-list__name 
+                                a.c-catlog__link Бытовая техника для дома и кухни  
+                                    
+                            li.c-catalog-list__item  
+                                a.c-catalog__link Крупная бытовая техника  
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Встраиваемая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Вытяжки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кофемашины, Кофеварки   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Мелкая бытовая техника   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Принадлежности для бытовой техники   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Посуда   
+                            li.c-catalog-list__item 
+                                a.c-catalog__link Кондиционеры   
+                            ul(id="techHid").c-catalog-list__hidden.hidden
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Техника для дома       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Обогреватели       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Климатическая техника       
+                                li.c-catalog-list__item 
+                                    a.c-catalog__link Водонагреватели    
+                            
+                            li.c-catalog-list__item 
+                            button(id="techBtn" type="button").c-catalog-list__button Показать все
+                            
+                   

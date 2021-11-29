@@ -1,0 +1,56 @@
+.c-products-list {
+  &__wrap {
+    margin: 4rem 0rem 0 0rem;
+    @include media-breakpoint-down(lg) {
+      margin: 8rem 0rem 0 0rem;
+    }
+  }
+  &__box {
+    display: flex;
+    margin: 4rem 0rem 0 0rem;
+  }
+  &__block {
+    margin-bottom: 2rem;
+  }
+  &__menu {
+    padding-right: 2rem;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+  &__item {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+  &__name {
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+  li {
+    list-style: none;
+  }
+  &__link {
+    font-size: 1.6rem;
+    cursor: pointer;
+    @include media-breakpoint-down(xl) {
+      font-size: 1.3rem;
+    }
+  }
+  &__button {
+    color: #fe7200;
+    font-size: 1.6rem;
+    &:hover {
+      color: #000;
+    }
+  }
+  &__content {
+    width: 80%;
+    @include media-breakpoint-down(xl) {
+      padding: 0 2rem;
+    }
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+extends _includes/_extends/main
+
+include _includes/components/c-busket/c-busket
+
+
+block head 
+    +head({'title' : 'Корзина'})
+
+block content 
+    +c-busket()
+
+

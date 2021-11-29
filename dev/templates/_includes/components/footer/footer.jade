@@ -1,0 +1,123 @@
+
+
+mixin footer()
+	footer.c-footer
+		.container
+			.row
+				.col-xl-8
+					h4.c-footer__title Хочу быть в курсе акций и новинок
+				.col-xl-12
+					.c-footer-subscribe__body
+						form(action="/").c-footer-subscribe__form
+							+form-group({
+								id: 'subscribe',
+								label: 'Мой e-mail',
+								required: true
+							})
+							button(type="submit").e-btn.c-footer-subscribe__btn Подписаться
+			.row
+				.col-xl-8
+					h4.c-footer__title  Включить уведомления в браузере
+				.col-xl-12
+					.c-footer-notify__body
+						span.c-footer-notify__ttl Новости, акции и все самые важные события для вас!
+						button(type="button").e-btn.c-footer-notify__btn Включить
+			.row
+				.col-xl-5
+					.c-footer__contact
+						h2.c-footer__title Контакты
+						.c-footer__contacts 
+							a(href="#").c-footer__address Адреса магазинов
+							.c-footer__contact-info
+								a(href="tel:+749565461").c-footer__phone +7(465)654-65-46
+							.c-footer__btns 
+								a(href="#").e-btn Перезвонить мне 
+								button(type='button').e-btn Задать вопрос
+							ul.c-footer__socials-list.c-footer-socials-list.h-reset-list
+								li.c-footer-socials-list__item
+									a(href="#").c-footer-socials-list__link
+										+svg('icon-fb') 
+								li.c-footer-socials-list__item
+									a(href="#").c-footer-socials-list__link
+										+svg('icon-inst') 
+								li.c-footer-socials-list__item
+									a(href="#").c-footer-socials-list__link
+										+svg('icon-yt') 
+								li.c-footer-socials-list__item
+									a(href="#").c-footer-socials-list__link
+										+svg('icon-vk') 
+								li.c-footer-socials-list__item
+									a(href="#").c-footer-socials-list__link
+										+svg('icon-ok') 
+				.col-xl-10.offset-xl-5
+					.c-footer__menu.c-footer-menu
+						.c-footer-menu__block
+							ul.h-reset-list.c-footer-menu__list
+								li.c-footer-menu__item
+									a(href="#").c-footer-menu__link Акции
+							ul.h-reset-list.c-footer-menu__list
+								li.c-footer-menu__item
+									a(href="#").c-footer-menu__link.disabled Покупателям
+									ul.h-reset-list.c-footer-menu__sublist
+										li.c-footer-menu__item
+											a(href="#").c-footer-menu__link Информация
+										li.c-footer-menu__item
+											a(href="#").c-footer-menu__link Доставка
+										li.c-footer-menu__item
+											a(href="#").c-footer-menu__link Гарантия
+										li.c-footer-menu__item
+											a(href="#").c-footer-menu__link Кредит и рассрочка
+						.c-footer-menu__block
+							ul.h-reset-list.c-footer-menu__list
+								li.c-footer-menu__item
+									a(href="#").c-footer-menu__link Сервисные центры
+								li.c-footer-menu__item
+									a(href="#").c-footer-menu__link Услуги
+								li.c-footer-menu__item
+									a(href="#").c-footer-menu__link Корпоративным клиентам
+								li.c-footer-menu__item
+									a(href="#").c-footer-menu__link Обзоры
+								li.c-footer-menu__item
+									a(href="#").c-footer-menu__link Барахолка
+								li.c-footer-menu__item
+									a(href="#").c-footer-menu__link Форум
+						.c-footer-menu__block
+							ul.h-reset-list.c-footer-menu__list
+								li.c-footer-menu__item
+									a(href="#").c-footer-menu__link Конфигуратор
+								li.c-footer-menu__item
+									a(href="#").c-footer-menu__link Подбор расходных материалов
+								li.c-footer-menu__item
+									a(href="#").c-footer-menu__link Ситилинк
+								li.c-footer-menu__item
+									a(href="#").c-footer-menu__link Новости
+								li.c-footer-menu__item
+									a(href="#").c-footer-menu__link Клуб Ситилинк
+								li.c-footer-menu__item
+									a(href="#").c-footer-menu__link Вакансии
+			.row
+				.col-xl-5
+					.c-footer__copyright
+						span © Ситилинк, 2008–2021
+						a(href="#") Политика обработки персональных данных
+				.col-xl-5.offset-xl-2
+					ul.c-footer__payments.h-reset-list
+						li 
+							img(src="s/images/useful/payments/1.png" alt="")
+						li 
+							img(src="s/images/useful/payments/2.png" alt="")
+						li 
+							img(src="s/images/useful/payments/3.png" alt="")
+						li 
+							img(src="s/images/useful/payments/4.png" alt="")
+				.col-xl-5.offset-xl-3
+					.c-footer__gdpr
+						.c-footer__gdpr-img
+							img(src="https://cdn-eu.dynamicyield.com/api/9876530/images/15d1cb97d26a3__Group_262.svg" alt="")
+						.c-footer__gdpr-links
+							a(href="#")  Ситилинк – зона безопасного сервиса
+							a(href="#") Безопасные способы оплаты
+
+
+
+

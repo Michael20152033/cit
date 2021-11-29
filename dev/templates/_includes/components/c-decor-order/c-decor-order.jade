@@ -1,0 +1,375 @@
+
+
+mixin c-decor-order(data)
+  .c-decor-order 
+    .container
+      .c-decor-order__checkout
+          a(href="#").c-decor-order__back Вернуться к корзине
+          h1.c-decor-order__title Оформления заказа
+        .c-decor-order__wrap
+          .c-decor-order__content 
+            .c-decor-order__block 
+              .c-decor-order__head 
+                h3.c-decor-order__name 1. Способ получения
+                .c-decor-order__btns 
+                
+                  +form-group({
+                    type: 'radio',
+                    value: 'Самовывоз',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'click',
+                    check_value: "check_value",
+                    label_class: 'e-btn e-btn--accent-filled c-decor-order__btn actived',
+                    required: true,
+                   
+                  })
+                  +form-group({
+                    type: 'radio',
+                    name: 'click',
+                    id: "tab2",
+                    check_value: "check_value",
+                    label_class: 'e-btn e-btn--accent-filled c-decor-order__btn',
+                    value: 'Доставка',
+                    check_icon: 'hidden',
+                    required: true,
+                  })
+              
+                  //- button(id="tab2" type="submit").e-btn.e-btn--accent-filled.c-decor-order__btn Доставка
+              .c-decor-order__insisde  
+                .c-decor-order__point.run(id="point")
+                  .c-decor-order__box
+                    .c-decor-order__relative
+                      .c-decor-order__img
+                        +svg('icon-house2')
+                      .c-decor-order__titwrap
+                        span.c-decor-order__boxtitle Пожалуйста, выберите пункт самовывоза
+                        .c-decor-order__description Магазины, пункты выдачи заказов и партнерские сети  
+                      button(type="submit").e-btn.e-btn--accent-filled.c-decor-order__btn Выбрать пункт самовывоза
+                .c-decor-order__delivery(id="delivery")
+                  .c-decor-order__row.row    
+                    .c-decor-column.col
+                      +form-group({
+                          wrapper_class: "order-input",
+                          custom_class: "modal-input-form",
+                          label__class: 'top',
+                          id: 'subscribe',
+                          label: 'Город *',
+                          placeholder: 'Г. Москва',
+                          required: true,
+                        })
+                    .c-decor-column.col     
+                      +form-group({
+                      
+                          wrapper_class: "order-input",
+                          custom_class: "modal-input-form",
+                          label__class: 'top',
+                          id: 'subscribe',
+                          label: 'Улица *',
+                          placeholder: 'Введите улицу',
+                          required: true,
+                        })
+                  .c-decor-order__row.row    
+                    .c-decor-column.col 
+                      +form-group({
+                    
+                        wrapper_class: "order-input",
+                        custom_class: "modal-input-form",
+                        label__class: 'top',
+                        id: 'subscribe',
+                        label: 'Улица *',
+                       
+                        required: true,
+                      })
+                    .c-decor-column.col 
+                      +form-group({
+                    
+                        wrapper_class: "order-input",
+                        custom_class: "modal-input-form",
+                        label__class: 'top',
+                        id: 'subscribe',
+                        label: 'Улица *',
+                     
+                        required: true,
+                      })
+                    .c-decor-column.col 
+                      +form-group({
+                    
+                        wrapper_class: "order-input",
+                        custom_class: "modal-input-form",
+                        label__class: 'top',
+                        id: 'subscribe',
+                        label: 'Улица *',
+                       
+                        required: true,
+                      })
+                  .c-decor-order__row.row    
+                    .c-decor-column.col 
+                      +form-group({
+                    
+                        wrapper_class: "order-input",
+                        custom_class: "modal-input-form",
+                        label__class: 'top',
+                        id: 'subscribe',
+                        label: 'Улица *',
+                       
+                        required: true,
+                      })
+                    .c-decor-column.col 
+                      +form-group({
+                    
+                        wrapper_class: "order-input",
+                        custom_class: "modal-input-form",
+                        label__class: 'top',
+                        id: 'subscribe',
+                        label: 'Улица *',
+                     
+                        required: true,
+                      })
+                    .c-decor-column.col 
+                      +form-group({
+                    
+                        wrapper_class: "order-input",
+                        custom_class: "modal-input-form",
+                        label__class: 'top',
+                        id: 'subscribe',
+                        label: 'Улица *',
+                       
+                        required: true,
+                      })
+              .c-decor-order__comment        
+                +form-group({
+                    wrapper_class: "order-input",
+                    custom_class: "modal-input-form",
+                    label__class: 'top',
+                    //- id: 'subscribe',
+                    label: 'Комментарий к заказу',
+                    
+                    required: true,
+                }) 
+            .c-decor-order__block 
+              h3.c-decor-order__name 2. Контактные данные
+              .c-decor-order__descrip Получатель
+              .c-decor-order__row.row
+                .c-decor-column.col 
+                  +form-group({
+                    
+                    wrapper_class: "order-input",
+                    custom_class: "modal-input-form",
+                    label__class: 'top',
+                    placeholder: 'Введите ваше имя',
+                    id: 'subscribe',
+                    label: 'Имя *', 
+                    required: true,
+                  })
+                .c-decor-column.col 
+                  +form-group({
+                    
+                    wrapper_class: "order-input",
+                    custom_class: "modal-input-form",
+                    placeholder: 'Введите вашу фамилию',
+                    label__class: 'top',
+                    id: 'subscribe',
+                    label: 'Фамилия *',
+                    required: true,
+                  })
+              .c-decor-order__row.row
+                .c-decor-column.col 
+                  +form-group({
+                    
+                        wrapper_class: "order-input",
+                        custom_class: "modal-input-form",
+                        label__class: 'top',
+                        id: 'subscribe',
+                        label: 'Телефон*',
+                       placeholder: '+7',
+                        required: true,
+                      })
+                .c-decor-column.col 
+                      +form-group({
+                    
+                        wrapper_class: "order-input",
+                        custom_class: "modal-input-form",
+                        label__class: 'top',
+                        id: 'subscribe',
+                        
+                        label: 'Телефон, если не дозвонимся *',
+                       placeholder: '+7',
+                        required: true,
+                      })          
+            .c-decor-order__block 
+              .c-decor-order__head
+                h3.c-decor-order__name 3. Подтверждение и оплата
+                .c-decor-order__descrip Выберите способ оплаты
+                .c-decor-order__btns 
+                
+                  +form-group({
+                    type: 'radio',
+                    value: 'Наличными или картой при получении',
+                    check_icon: 'hidden',
+                    check_value: "check_value",
+                    id: "cash",
+                    name: 'click',
+                    label_class: 'e-btn e-btn--accent-filled c-decor-order__btn actived',
+                    required: true,
+                   
+                  })
+                  +form-group({
+                    type: 'radio',
+                    name: 'click',
+                    id: "card",
+                    check_value: "check_value",
+                    label_class: 'e-btn e-btn--accent-filled c-decor-order__btn',
+                    value: 'Банковской картой онлайн',
+                    check_icon: 'hidden',
+                    required: true,
+                  })
+                  +form-group({
+                    type: 'radio',
+                    name: 'click',
+                    id: "money",
+                    check_value: "check_value",
+                    label_class: 'e-btn e-btn--accent-filled c-decor-order__btn',
+                    value: 'ЮMoney',
+                    check_icon: 'hidden',
+                    required: true,
+                  })
+                  +form-group({
+                    type: 'radio',
+                    name: 'click',
+                    id: "installment",
+                    check_value: "check_value",
+                    label_class: 'e-btn e-btn--accent-filled c-decor-order__btn',
+                    value: 'В рассрочку',
+                    check_icon: 'hidden',
+                    required: true,
+                  })
+                  +form-group({
+                    type: 'radio',
+                    name: 'click',
+                    id: "system",
+                    check_value: "check_value",
+                    label_class: 'e-btn e-btn--accent-filled c-decor-order__btn',
+                    value: 'Система быстрых платежей - QR Code',
+                    check_icon: 'hidden',
+                    required: true,
+                  })
+                .c-decor-order__insisde
+                  .c-decor-order__verify(id="verify")
+                    .c-decor-order__descrip Выберите способ оплаты
+                    .c-decor-order__hidden
+                      .c-decor-order__passport При получении заказа мы просим показать паспорт или другой документ на указанное имя . Документы, удостоверяющие личность: Паспорт РФ, Загранпаспорт РФ, Водительское удостоверение, Паспорт моряка, Удостоверение личности военнослужащего РФ, Военный билет, Паспорт иностранного гражданина, Дипломатический паспорт.
+                      +form-group({
+                        wrapper_class: "input-check",
+                        type: 'checkbox',
+                        value: 'Данные получателя указаны верно'
+                      })
+                  +form-group({
+                    wrapper_class: "input-check",
+                    type: 'checkbox',
+                    value: 'Данные получателя указаны верно *'
+                  })
+                  .c-decor-order__verify(id="way")
+                    .c-decor-order__descrip Получить SMS по:
+                    .c-decor-order__btns 
+                    
+                      +form-group({
+                        type: 'radio',
+                        value: 'Email',
+                        check_icon: 'hidden',
+                        id: "email",
+                        name: 'click',
+                        check_value: "check_value",
+                        label_class: 'e-btn e-btn--accent-filled c-decor-order__btn actived',
+                        required: true,
+                      
+                      })
+                      +form-group({
+                        type: 'radio',
+                        name: 'click',
+                        id: "hase",
+                        check_value: "check_value",
+                        label_class: 'e-btn e-btn--accent-filled c-decor-order__btn',
+                        value: 'Доставка',
+                        check_icon: 'hidden',
+                        required: true,
+                      })
+                    .c-decor-order__choice.run(id="choice")
+                      .c-decor-order__row.row
+                        .c-decor-column.col.col-md-10 
+                          +form-group({
+                          
+                              wrapper_class: "order-input",
+                              custom_class: "modal-input-form",
+                              label__class: 'top',
+                              id: 'subscribe',
+                              label: 'Email',
+                              placeholder: 'Введите ваш e-mail',
+                              required: true,
+                            })  
+                    .c-decor-order__tel(id="tel")
+                      .c-decor-order__row.row
+                        .c-decor-column.col.col-md-10 
+                          +form-group({
+                          
+                              wrapper_class: "order-input",
+                              custom_class: "modal-input-form",
+                              label__class: 'top',
+                              id: 'subscribe',
+                              label: 'Телефон',
+                              placeholder: '+7',
+                              required: true,
+                            })  
+
+                    
+                  
+                .c-decor-order__article 2 товара 
+                .c-decor-order__money Итого: 37 070 
+                  +svg('icon-rub')
+                .c-decor-order-buy.c-decor-order-buy--mob
+                  .c-decor-order-buy__content
+                    .c-decor-order-buy__wrap
+                      .c-decor-order-buy__name 2 Позиции в заказе
+                      .c-decor-order-buy__products 
+                        .c-decor-order-buy__shopping
+                          .c-decor-order-buy__product Смартфон XIAOMI Poco X3 128Gb, серый
+                          .c-decor-order-buy__price 18 590  - шт
+                           
+                        .c-decor-order-buy__shopping
+                          .c-decor-order-buy__product Смартфон XIAOMI Poco X3 128Gb, серый
+                          .c-decor-order-buy__price 18 590 - шт
+                           
+                
+                    .c-decor-order-buy__end 
+                      .c-decor-order-buy__text Итого:
+                      .c-decor-order-buy__result 37 070 
+                        +svg('icon-rub-s')    
+                button(type="submit").e-btn.e-btn--accent-filled.c-decor-order__button Оформить заказ
+                .c-decor-order__text 
+                  p Внимание! Окончательная стоимость заказа, если в нем присутствуют товары и/или услуги, участвующие в акции, будет подтверждена после обработки заказа сотрудником компании.      
+                  p Оплачивая настоящий заказ, покупатель принимает на себя обязательство в момент приема-передачи товара осуществить полную проверку его внешнего вида и комплектации, ознакомиться с предложенной продавцом информацией, установленной Законом РФ «О защите прав потребителей» и Постановлением Правительства РФ № 612 "Об утверждении Правил продажи товаров дистанционным способом". Кроме того, покупатель подтверждает, что ознакомился с условиями публичной оферты, расположенной на сайте www.citilink.ru, а также с условиями гарантийного обязательства продавца и со сроками в нем установленными. По истечении 24 часов с момента приема-передачи товара продавец имеет право не принимать претензии, связанные с ненадлежащим внешним видом или комплектацией товара.
+                  p Нажимая кнопку "Оплатить", я даю разрешение Обществу с ограниченной ответственностью "Ситилинк" (далее - "Ситилинк") в целях заключения и исполнения договора купли-продажи обрабатывать - собирать, записывать, систематизировать, накапливать, хранить, уточнять (обновлять, изменять), извлекать, использовать, передавать (в том числе поручать обработку другим лицам), обезличивать, блокировать, удалять, уничтожать - мои персональные данные: фамилию, имя, номера домашнего и мобильного телефонов, адрес электронной почты. Согласие может быть отозвано мною в любой момент путём направления письменного уведомления по адресу "Ситилинк". Ознакомиться с Политикой персональных данных. Внимание! Сервис SMS уведомлений предоставляется «как есть». Ситилинк не принимает на себя никакой ответственности за задержку или недоставку SMS сообщений.
+                    
+          .c-decor-order-buy
+            .c-decor-order-buy__content
+              .c-decor-order-buy__wrap
+                .c-decor-order-buy__name 2 Позиции в заказе
+                .c-decor-order-buy__products 
+                  .c-decor-order-buy__shopping
+                    .c-decor-order-buy__product Смартфон XIAOMI Poco X3 128Gb, серый
+                    .c-decor-order-buy__price 18 590  - шт
+                    
+                  .c-decor-order-buy__shopping
+                    .c-decor-order-buy__product Смартфон XIAOMI Poco X3 128Gb, серый
+                    .c-decor-order-buy__price 18 590  - шт
+                     
+                
+              .c-decor-order-buy__end 
+                .c-decor-order-buy__text Итого:
+                .c-decor-order-buy__result 37 070 
+                  +svg('icon-rub-s')
+                
+
+
+            
+                        

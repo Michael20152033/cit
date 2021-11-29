@@ -1,0 +1,6 @@
+mixin c-brands-tile(data)
+	if data.txt 
+		a(href="#").c-brands-tile.c-brands-tile--txt!=data.txt
+	if data.img
+		a(href="#").c-brands-tile
+			+picture(data.img)

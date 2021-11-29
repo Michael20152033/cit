@@ -1,0 +1,326 @@
+
+mixin c-modal-basket(data)
+  #basketModal(tabindex="-1").c-modal-basket.modal.fade
+    .modal-wrap
+      .modal-dialog.c-modal-basket__dialog
+        .modal-content
+          button(data-bs-toggle="modal" data-bs-target="#basketModal" type="button" id="modal-login__close").c-modal-login__close
+            +svg('icon-close')
+          .c-modal-basket__top 
+            h1.c-moda-basket__title Товар добавлен в корзину
+            .c-modal-basket__btns 
+              button(type="submit").c-modal-basket__button.e-btn.e-btn--accent-filled.c-modal-basket__white Продолжить покупки
+              button(type="submit").c-modal-basket__button.e-btn.e-btn--accent-filled Перейти в корзину
+          .c-busket__item.c-busket-item 
+            .c-busket-item__main  
+              .c-busket-item__img 
+                img(src="s/images/useful/product/thumb1.jpg", alt="")
+              .c-busket-item__info 
+                span.c-busket-item__code Код товара: 1409013
+                a(href="#").c-busket-item__title Кресло игровое A4TECH Bloody GC-870, на колесиках, эко.кожа, черный/красный  
+                .c-busket-item__delivery 
+                  .c-busket-item__delivery-group.black
+                    +svg('icon-machine')
+                    span.green Забрать сегодня
+                      a(href="#") в 5 магазинах
+                  .c-busket-item__delivery-group
+                    span Привезем
+                      a(href="#") в 360 пунктов(1-2 дня)   
+              .c-busket-item__actions
+                .c-busket-item__counter
+                  +c-counter()
+                .c-busket-item__price
+                  span 17 990
+                    span.rub ₽
+          form(action="").c-modal-basket__radio
+            .c-modal-basket__formwrap
+              .c-modal-basket__left 
+                +form-group({
+                  type: 'radio',
+                  value: 'Полис "Продления гарантии +"',
+                  check_icon: 'check-box',
+                  name: 'office',
+                  required: true,
+                })
+                .c-modal-basket__question 
+                  +svg('icon-question')
+              .c-modal-basket__right 
+                .c-modal-basket__btns
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                .c-modal-basket__price 
+                  span 17 990
+                    span.rub ₽
+            .c-modal-basket__formwrap
+              .c-modal-basket__left 
+                +form-group({
+                  type: 'radio',
+                  value: 'Полис "Продления гарантии +"',
+                  check_icon: 'check-box',
+                  name: 'office',
+                  required: true,
+                })
+                .c-modal-basket__question 
+                  +svg('icon-question')
+              .c-modal-basket__right 
+                .c-modal-basket__btns
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                .c-modal-basket__price 
+                  span 17 990
+                    span.rub ₽
+            .c-modal-basket__formwrap
+              .c-modal-basket__left 
+                +form-group({
+                  type: 'radio',
+                  value: 'Полис "Продления гарантии +"',
+                  check_icon: 'check-box',
+                  name: 'office',
+                  required: true,
+                })
+                .c-modal-basket__question 
+                  +svg('icon-question')
+              .c-modal-basket__right 
+                .c-modal-basket__btns
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                .c-modal-basket__price 
+                  span 17 990
+                    span.rub ₽
+            .c-modal-basket__formwrap
+              .c-modal-basket__left 
+                +form-group({
+                  type: 'radio',
+                  value: 'Полис "Продления гарантии +"',
+                  check_icon: 'check-box',
+                  name: 'office',
+                  required: true,
+                })
+                .c-modal-basket__question 
+                  +svg('icon-question')
+              .c-modal-basket__right 
+                .c-modal-basket__btns
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                .c-modal-basket__price 
+                  span 17 990
+                    span.rub ₽
+            .c-modal-basket__formwrap
+              .c-modal-basket__left 
+                +form-group({
+                  type: 'radio',
+                  value: 'Полис "Продления гарантии +"',
+                  check_icon: 'check-box',
+                  name: 'office',
+                  required: true,
+                })
+                .c-modal-basket__question 
+                  +svg('icon-question')
+              .c-modal-basket__right 
+                .c-modal-basket__btns
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                  +form-group({
+                    type: 'radio',
+                    value: '+1 год',
+                    check_icon: 'hidden',
+                    id: "tab1",
+                    name: 'year',
+                    label_class: 'e-btn e-btn--accent-filled c-modal-basket__btn actived',
+                    required: true,
+                  })
+                .c-modal-basket__price 
+                  span 17 990
+                    span.rub ₽
+
+          
+          
+          .row 
+            .col-lg-20
+              .c-modal-basket__slider
+                .c-product__slider-thumbs
+                  .swiper-container.basketSliderThumb(thumbsslider='')
+                    .swiper-wrapper
+                      .swiper-slide.swiper__width
+                        .swiper-flex 
+                          img(src='s/images/useful/product/thumb2.jpg')
+                          .swiper__descrip
+                            .swiper__top
+                              .swiper__text Жидкость для чистки PHILIPS HQ200/50
+                            .swiper__bottom 
+                              .swiper__price 
+                                span 17 990
+                                  span.rub ₽
+                              a.c-product-tile__added.icon-font.c-modal-basket__buy
+                      .swiper-slide.swiper__width
+                        .swiper-flex 
+                          img(src='s/images/useful/product/thumb2.jpg')
+                          .swiper__descrip
+                            .swiper__top
+                              .swiper__text Жидкость для чистки PHILIPS HQ200/50
+                            .swiper__bottom 
+                              .swiper__price
+                                span 17 990
+                                  span.rub ₽
+                              a.c-product-tile__added.icon-font.c-modal-basket__buy
+                      .swiper-slide.swiper__width
+                        .swiper-flex 
+                          img(src='s/images/useful/product/thumb2.jpg')
+                          .swiper__descrip
+                            .swiper__top
+                              .swiper__text Жидкость для чистки PHILIPS HQ200/50
+                            .swiper__bottom 
+                              .swiper__price 
+                                span 17 990
+                                  span.rub ₽
+                              a.c-product-tile__added.icon-font.c-modal-basket__buy
+                      .swiper-slide.swiper__width
+                        .swiper-flex 
+                          img(src='s/images/useful/product/thumb2.jpg')
+                          .swiper__descrip
+                            .swiper__top
+                              .swiper__text Жидкость для чистки PHILIPS HQ200/50
+                            .swiper__bottom 
+                              .swiper__price 
+                                span 17 990
+                                  span.rub ₽
+                              a.c-product-tile__added.icon-font.c-modal-basket__buy
+                      .swiper-slide.swiper__width
+                        .swiper-flex 
+                          img(src='s/images/useful/product/thumb2.jpg')
+                          .swiper__descrip
+                            .swiper__top
+                              .swiper__text Жидкость для чистки PHILIPS HQ200/50
+                            .swiper__bottom 
+                              .swiper__price 
+                                span 17 990
+                                  span.rub ₽
+                              a.c-product-tile__added.icon-font.c-modal-basket__buy
+                  .swiper-button.swiper-button-next.c-modal-basket__next
+                    +svg('icon-arrow')
+                  .swiper-button.swiper-button-prev.c-modal-basket__prev
+                    +svg('icon-arrow')
+          .c-modal-basket__end 
+            +form-group({
+              type: 'checkbox',
+              value: 'Полис "Продления гарантии +"',
+              check_icon: 'check-marg',
+              name: 'office',
+              required: true,
+            })

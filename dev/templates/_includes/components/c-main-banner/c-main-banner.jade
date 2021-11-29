@@ -1,0 +1,45 @@
+mixin c-main-banner(data)
+	.c-main-banner
+		.container 
+			.row
+				.col-xl-16
+					.c-main-banner__slider-wrapper
+						.c-main-banner__slider.swiper-container
+							.swiper-wrapper
+								.c-main-banner__slide.c-main-banner-slide.swiper-slide
+									a(href="#").c-main-banner-slide__link
+										+picture({
+											custom_class: 'h-object-fit',
+											img:'main-banner/1.jpg'
+										}) 
+								.c-main-banner__slide.c-main-banner-slide.swiper-slide
+									a(href="#").c-main-banner-slide__link
+										+picture({
+											custom_class: 'h-object-fit',
+											img:'main-banner/2.jpg'
+										}) 
+								.c-main-banner__slide.c-main-banner-slide.swiper-slide
+									a(href="#").c-main-banner-slide__link
+										+picture({
+											custom_class: 'h-object-fit',
+											img:'main-banner/3.jpg'
+										}) 
+								.c-main-banner__slide.c-main-banner-slide.swiper-slide
+									a(href="#").c-main-banner-slide__link
+										+picture({
+											custom_class: 'h-object-fit',
+											img:'main-banner/4.jpg'
+										})
+							.c-main-banner__slider-actions
+								.swiper-button.swiper-button-prev
+								.swiper-pagination
+								.swiper-button.swiper-button-next
+						.c-main-banner__slider-shadow
+							.c-main-banner__slider-shadow-dark
+							.c-main-banner__slider-shadow-light
+				.col-xl-4
+					a(href="#").c-main-banner__poster
+						+picture({
+							custom_class: 'h-object-fit',
+							img:'main-banner/poster.jpg'
+						})

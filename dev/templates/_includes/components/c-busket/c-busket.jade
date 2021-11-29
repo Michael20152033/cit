@@ -1,0 +1,127 @@
+mixin c-busket(data)
+	.c-busket
+		.container 
+			.row
+				.c-busket__head 
+					a(href="#").c-busket__return Вернуться к покупкам
+					h2.c-busket__title Корзина
+			.c-busket__inner
+				.row 
+					.col-xl-16
+						.c-busket__list
+							.c-busket__item.c-busket-item
+								.c-busket-item__main
+									.c-busket-item__img 
+										img(src="s/images/useful/product/thumb1.jpg", alt="")
+									.c-busket-item__info 
+										span.c-busket-item__code Код товара: 1409013
+										a(href="#").c-busket-item__title Кресло игровое A4TECH Bloody GC-870, на колесиках, эко.кожа, черный/красный
+										.c-busket-item__delivery 
+											.c-busket-item__delivery-group 
+												+svg('icon-delivery')
+												span.green Забрать сегодня
+													a(href="#") в 5 магазинах
+											.c-busket-item__delivery-group 
+												span Привезем
+													a(href="#") в 360 пунктов
+													| (1-2 дня)
+									.c-busket-item__actions 
+										.c-busket-item__counter
+											+c-counter()
+										.c-busket-item__price 
+											span 17 990
+												span.rub ₽
+										.c-busket-item__btns
+											button(type="button").c-busket-item__btn
+												+svg('icon-favourites')
+											button(type="button").c-busket-item__btn
+												+svg('icon-del')
+								.c-busket-item__services
+									.c-busket-item__service
+										button.btn.btn-primary.collapsed.c-busket-item__btn(type='button' data-bs-toggle='collapse' data-bs-target='#service1' aria-expanded='false' aria-controls='service1') 
+											+svg('icon-arrow')
+											span Дополнительные услуги                                                                     
+                                
+										#service1.collapse.c-busket-item__collapse
+											.card.card-body
+												.c-product-service__row
+													+form-group({
+														wrapper_class: "input-check",
+														checkbox: true,
+														type: 'checkbox',
+														value: 'Сборка кресла или стула'
+													})
+													.c-product-service__actions
+														.price 
+															span 18030
+															span.rub ₽
+							.c-busket__item.c-busket-item
+								.c-busket-item__main
+									.c-busket-item__img 
+										img(src="s/images/useful/product/thumb2.jpg", alt="")
+									.c-busket-item__info 
+										span.c-busket-item__code Код товара: 1409013
+										a(href="#").c-busket-item__title Кресло игровое A4TECH Bloody GC-870, на колесиках, эко.кожа, черный/красный
+										.c-busket-item__delivery 
+											.c-busket-item__delivery-group 
+												+svg('icon-delivery')
+												span.green Забрать сегодня
+													a(href="#") в 5 магазинах
+											.c-busket-item__delivery-group 
+												span Привезем
+													a(href="#") в 360 пунктов
+													| (1-2 дня)
+									.c-busket-item__actions 
+										.c-busket-item__counter
+											+c-counter()
+										.c-busket-item__price 
+											span 17 990
+												span.rub ₽
+										.c-busket-item__btns
+											button(type="button").c-busket-item__btn
+												+svg('icon-favourites')
+											button(type="button").c-busket-item__btn
+												+svg('icon-del')
+								.c-busket-item__services
+									.c-busket-item__service
+										button.btn.btn-primary.collapsed.c-busket-item__btn(type='button' data-bs-toggle='collapse' data-bs-target='#service2' aria-expanded='false' aria-controls='service2') 
+											+svg('icon-arrow')
+											span Дополнительные услуги                                                                     
+                                
+										#service2.collapse.c-busket-item__collapse
+											.card.card-body
+												.c-product-service__row
+													+form-group({
+														wrapper_class: "input-check",
+														checkbox: true,
+														type: 'checkbox',
+														value: 'Сборка кресла или стула'
+													})
+													.c-product-service__actions
+														.price 
+															span 18030
+															span.rub ₽
+					.col-xl-4
+						aside.c-busket__sidebar.c-busket-sidebar
+							.c-busket-sidebar__free
+								.c-busket-sidebar__free-img 
+									img(src="s/images/useful/delivery.png", alt="")
+								.c-busket-sidebar__free-txt 
+									h4 Бесплатно
+									span доставим этот заказ!
+							.c-busket-sidebar__total
+								h3.c-busket-sidebar__total-ttl В корзине
+								span.c-busket-sidebar__total-count 2 товара
+								button(type="button").c-busket-sidebar__total-promo Ввести промокод
+								.c-busket-sidebar__total-price 
+									span 21 980  
+										span.rub ₽
+								a(href="#").e-btn.e-btn--accent-filled Перейти к оформлению
+								.c-busket-sidebar__total-footer 
+									span Если у вас уже есть клубная карта, то 
+										a(href="#") авторизируйтесь
+										| , чтобы воспользоваться.
+							button(type="button" disabled).c-busket-sidebar__btn.e-btn.e-btn--gray-border.e-btn--gray-border--disabled.e-btn--wide Добавить все в избранное
+							button(type="button").c-busket-sidebar__btn.e-btn.e-btn--gray-border.e-btn--wide Очистить корзину
+							.c-busket-sidebar__notify 
+								span Обращаем Ваше внимание, что окончательная стоимость и состав заказа, если в нем присутствуют товары и/или услуги, участвующие в акции, будет подтверждена после обработки заказа.

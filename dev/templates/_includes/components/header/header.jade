@@ -1,0 +1,252 @@
+mixin header()
+	header.c-header
+		.container
+			.c-header__product.c-header-product
+				.c-header-product__wrap
+					.c-header-product__block
+						.c-header-product__left 
+							button(type="button" id="headerCatalog__close").c-header-product__close-mob
+								+svg('icon-close')
+							h3.c-header-product__title Каталог	
+							.c-header-product__menu 
+								a(href="#").c-header-product__item
+									+svg('icon-phone')
+									span.c-header-product__link Смартфоны и гаджеты
+								a(href="#").c-header-product__item
+									+svg('icon-note')
+									span.c-header-product__link Ноутбуки и компьютеры
+								a(href="#").c-header-product__item
+									+svg('icon-tv')
+									span.c-header-product__link Бытовая техника для дома и кухни
+								a(href="#").c-header-product__item
+									+svg('icon-life')
+									span.c-header-product__link Строительство и ремонт
+								a(href="#").c-header-product__item
+									+svg('icon-build')
+									span.c-header-product__link Дом и дача
+								a(href="#").c-header-product__item
+									+svg('icon-house')
+									span.c-header-product__link Фото, видео, системы безопасности
+								a(href="#").c-header-product__item
+									+svg('icon-auto')
+									span.c-header-product__link Автотовары
+								a(href="#").c-header-product__item
+									+svg('icon-canz')
+									span.c-header-product__link Канцтовары, мебель и офисная техника
+								a(href="#").c-header-product__item
+									+svg('icon-office')
+									span.c-header-product__link Красота и здоровье
+								a(href="#").c-header-product__item
+									+svg('icon-beauty')
+									span.c-header-product__link Детские товары
+								a(href="#").c-header-product__item
+									+svg('icon-kind')
+									span.c-header-product__link Спорт и отдых
+								a(href="#").c-header-product__item
+									+svg('icon-sport')
+									span.c-header-product__link Товары для геймеров
+								a(href="#").c-header-product__item
+									+svg('icon-game')
+									span.c-header-product__link Телевизоры, аудио-видео, HI-FI
+								a(href="#").c-header-product__item
+									+svg('icon-unprice')
+									span.c-header-product__link Уцененные товары
+								a(href="#").c-header-product__item
+									+svg('icon-gift')
+									span.c-header-product__link Подарочоные сертификаты
+								a(href="#").c-header-product__item
+									+svg('icon-servies')
+									span.c-header-product__link Сервисы и услуги
+						.c-header-product__right 
+							.c-header-product__top
+								form(action="/").c-header-product__search.c-header-search
+									input(type="text" placeholder='Поиск по товарам' required).c-header-search__field
+									button(type="submit").c-header-search__submit
+										+svg('icon-search')
+								button(type="button" id="headerCatalog__close").c-header-product__close 
+									+svg('icon-close')
+							h3.c-header-product__title Смартфоны и гаджеты	
+							.c-header-product__list 	
+								.c-header-product__subcategory 
+									a(href="#").c-header-product__name Смартфоны
+									a(href="#").c-header-product__goods Премиум смартфоны 
+									a(href="#").c-header-product__goods Apple смартфоны 
+									a(href="#").c-header-product__goods Cмартфоны Samsung 
+									a(href="#").c-header-product__goods Cмартфоны Xiaomi 
+									a(href="#").c-header-product__goods Недорогие смартфоны 
+									a(href="#").c-header-product__goods Мощные смартфоны 
+								.c-header-product__subcategory 
+									a(href="#").c-header-product__name Аксессуары для планшетов
+									a(href="#").c-header-product__goods Зарядные устройства для планшета 
+									a(href="#").c-header-product__goods Кабели для смартфонов и планшетов 
+									a(href="#").c-header-product__goods Чехлы для планшетов 
+									a(href="#").c-header-product__goods Защитные пленки для планшетов 
+									a(href="#").c-header-product__goods Держатели, подставки 
+									a(href="#").c-header-product__goods Мощные смартфоны 
+								.c-header-product__subcategory 
+									a(href="#").c-header-product__name Аксессуары для планшетов
+									a(href="#").c-header-product__goods Зарядные устройства для планшета 
+									a(href="#").c-header-product__goods Кабели для смартфонов и планшетов 
+									a(href="#").c-header-product__goods Чехлы для планшетов 
+									a(href="#").c-header-product__goods Защитные пленки для планшетов 
+									a(href="#").c-header-product__goods Держатели, подставки 
+									a(href="#").c-header-product__goods Мощные смартфоны 
+								.c-header-product__subcategory 
+									a(href="#").c-header-product__name Аксессуары для планшетов
+									a(href="#").c-header-product__goods Зарядные устройства для планшета 
+									a(href="#").c-header-product__goods Кабели для смартфонов и планшетов 
+									a(href="#").c-header-product__goods Чехлы для планшетов 
+									a(href="#").c-header-product__goods Защитные пленки для планшетов 
+									a(href="#").c-header-product__goods Держатели, подставки 
+									a(href="#").c-header-product__goods Мощные смартфоны 
+								.c-header-product__subcategory 
+									a(href="#").c-header-product__name Аксессуары для планшетов
+									a(href="#").c-header-product__goods Зарядные устройства для планшета 
+									a(href="#").c-header-product__goods Кабели для смартфонов и планшетов 
+									a(href="#").c-header-product__goods Чехлы для планшетов 
+									a(href="#").c-header-product__goods Защитные пленки для планшетов 
+									a(href="#").c-header-product__goods Держатели, подставки 
+									a(href="#").c-header-product__goods Мощные смартфоны 
+								.c-header-product__subcategory 
+									a(href="#").c-header-product__name Аксессуары для планшетов
+									a(href="#").c-header-product__goods Зарядные устройства для планшета 
+									a(href="#").c-header-product__goods Кабели для смартфонов и планшетов 
+									a(href="#").c-header-product__goods Чехлы для планшетов 
+									a(href="#").c-header-product__goods Защитные пленки для планшетов 
+									a(href="#").c-header-product__goods Держатели, подставки 
+									a(href="#").c-header-product__goods Мощные смартфоны 
+			.c-header__mob
+				button(type="button").c-header__burger
+					+svg('icon-menu')
+				a(href="#").c-header__logo
+					+svg('icon-logo-big')
+				button(type="submit").c-header__loop
+					+svg('icon-search')
+				.c-header__show
+					form(action="/").c-header__searching.c-header-search
+						input(type="text" placeholder='Поиск по товарам' required).c-header-search__field
+						button(type="submit").c-header-search__submit
+							+svg('icon-search')
+					button(type="reset").c-header__cancel Отменить
+			#headerCatalog.c-header__modal.c-header-modal
+				a(href="#").c-header-modal__logo
+					+svg('icon-logo-big')
+				button(type="button" id="headerCatalog__close").c-header-modal__close 
+					+svg('icon-close')
+				.c-header-modal__country
+					a(href="tel:+11111111111").c-header-tel.c-header-modal__tel
+						+svg('icon-tel')
+				nav.c-header-modal__menu
+					ul.h-reset-list.c-header-modal__list
+						li.c-header-modal__item
+							a(id="click" href="#").c-header-modal__link Каталог
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Акции
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Ситилинк.Бизнес
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Магазины
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Покупателям
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Сервисные центры
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Услуги
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Обзоры
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Барахолка
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Форум
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Конфигуратор
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Подбор расходных материалов
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Ситилинк
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Новости
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Клуб Ситилинк
+						li.c-header-modal__item
+							a(href="#").c-header-modal__link Вакансии
+				.c-header-modal__control 
+					button(type="button").c-header-modal-btn.c-header-modal__call Перезвоните мне
+					button(type="button").c-header-modal-btn.c-header-modal__ask Задать вопрос
+				.c-header-modal__contacts 
+					a(href="#")
+						+svg('icon-facebook')
+					a(href="#")
+						+svg('icon-tube')
+					a(href="#")
+						+svg('icon-vkon')
+					a(href="#")
+						+svg('icon-odnok')
+					a(href="#")
+						+svg('icon-tik')
+					a(href="#")
+						+svg('icon-dzen')
+					a(href="#")
+						+svg('icon-tg')
+			#overlay.c-header__overlay
+			.row 
+				.c-header__top
+					.col-md-4
+						a(href="#").c-header__logo
+							+svg('icon-logo-big')
+					.col-md-16
+						.c-header__content
+							.c-header__info
+								a(href="tel:+74957802002").c-header__phone +7(495)780-20-02 
+							nav.c-header__menu.c-header-menu 
+								ul.h-reset-list.c-header-menu__list
+									li.c-header-menu__item
+										a(href="#").c-header-menu__link Акции
+									li.c-header-menu__item
+										a(href="#").c-header-menu__link Ситилинк.Бизнес
+									li.c-header-menu__item
+										a(href="#").c-header-menu__link Доставка
+									li.c-header-menu__item
+										a(href="catalog.html").c-header-menu__link Магазины
+									li.c-header-menu__item
+										a(href="#").c-header-menu__link Обратная связь
+			#fixedHeader.c-header__fixed
+				.container
+					.row 
+						.c-header__fixed-wrap
+							.col-md-4
+								.c-header__main-catalog
+									a(href="#").c-header__logo--small
+										+svg('icon-logo-small')
+									button(id="product" type="button").c-header__catalog.c-header__catalog--mob Каталог товаров
+							.col-md-16
+								.c-header__content
+									.c-header__search-container
+										form(action="/").c-header__search.c-header-search
+											input(type="text" placeholder='Поиск по товарам' required).c-header-search__field
+											button(type="submit").c-header-search__submit
+												+svg('icon-search')
+											button(type="button").c-header-search__reset
+												+svg('icon-close')
+									nav.c-header__actions.c-header-actions
+										ul.h-reset-list.c-header-actions__list
+											li.c-header-actions__item--mob
+												a(href="#").c-header-actions__link.c-header-actions__link
+													+svg("icon-home")
+													span.c-header-actions__txt Главная
+											li.c-header-actions__item--mob
+												a(href="#").c-header-actions__link.c-header-actions__link
+													+svg("icon-catalog")
+													span.c-header-actions__txt Каталог
+											li.c-header-actions__item
+												a(href="#").c-header-actions__link
+													+svg("icon-basket")
+													span.c-header-actions__txt Корзина
+											li.c-header-actions__item
+												a(href="#").c-header-actions__link
+													+svg("icon-favourites")
+													span.c-header-actions__txt Избранное
+											li.c-header-actions__item
+												a(data-bs-toggle="modal" data-bs-target="#loginModal" href="#").c-header-actions__link
+													+svg("icon-login")
+													span.c-header-actions__txt Войти

@@ -1,0 +1,12 @@
+extends _includes/_extends/main
+
+include _includes/components/c-catalog-list/c-catalog-list
+
+
+block head 
+    +head({'title' : 'Каталог'})
+
+block content 
+    +c-catalog-list()
+
+

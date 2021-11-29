@@ -1,0 +1,346 @@
+mixin c-office-inside(data)
+  .c-office-inside
+    .container
+      .c-office-inside__wrap
+        .c-office-inside__left
+          h1.c-office-inside__title Личный кабинет
+          .c-office-inside__right.c-office-inside__right--mob
+            .c-office-inside__photo
+              +picture({
+                img:'office/photo.jpg'
+              })
+            .sadas
+              button(type="button").e-btn.e-btn--accent-filled.c-office-inside__btn Загрузить фотографию
+            .c-office-inside__contwrap
+              .c-office-inside__rightline
+                .c-office-inside__names Город
+                .c-office-inside__descrip Москва
+              .c-office-inside__rightline
+                .c-office-inside__names Пол
+                .c-office-inside__descrip Не указан
+              .c-office-inside__rightline 
+                .c-office-inside__names Аккаунт создан
+                .c-office-inside__descrip 21 июня
+            .c-office-inside__contwrap  
+              h4.c-office-inside__conttitle Мои покупки
+              .c-office-inside__rightline 
+                .c-office-inside__text Текущий квартал: апрель май июнь
+            .c-office-inside__contwrap  
+              h4.c-office-inside__conttitle Активность
+              .c-office-inside__rightline 
+                .c-office-inside__names Рейтинг
+                .c-office-inside__descrip 0
+              .c-office-inside__rightline 
+                .c-office-inside__names Рейтинг
+                .c-office-inside__descrip 0
+              .c-office-inside__rightline 
+                .c-office-inside__names Рейтинг
+                .c-office-inside__descrip 0
+              .c-office-inside__rightline 
+                .c-office-inside__names Рейтинг
+                .c-office-inside__descrip 0
+              .c-office-inside__rightline 
+                .c-office-inside__names Рейтинг
+                .c-office-inside__descrip 0
+              .c-office-inside__rightline 
+                .c-office-inside__names Рейтинг
+                .c-office-inside__descrip 0
+            .c-office-inside__contwrap  
+              h4.c-office-inside__conttitle Активность
+              .c-office-inside__rightline 
+                .c-office-inside__names Рейтинг
+                .c-office-inside__descrip 0
+              .c-office-inside__rightline 
+                .c-office-inside__names Рейтинг
+                .c-office-inside__descrip 0
+              .c-office-inside__rightline 
+                .c-office-inside__names Рейтинг
+                .c-office-inside__descrip 0
+              .c-office-inside__rightline 
+                .c-office-inside__names Рейтинг
+                .c-office-inside__descrip 0
+              .c-office-inside__rightline 
+                .c-office-inside__names Рейтинг
+                .c-office-inside__descrip 0
+              .c-office-inside__rightline 
+                .c-office-inside__names Рейтинг
+                .c-office-inside__descrip 0
+          ul#myTab.nav.c-main-categories__tabs-nav.c-office-inside__tab(role='tablist')
+            li.nav-item(role='presentation')
+              button#newCategories-tab.nav-link.c-office-inside__tabs.active(data-bs-toggle='tab' data-bs-target='#office' type='button' role='tab' aria-controls='office' aria-selected='true') Мой профиль
+            li.nav-item(role='presentation')
+              button#popularCategories-tab.nav-link.c-office-inside__tabs(data-bs-toggle='tab' data-bs-target='#profile' type='button' role='tab' aria-controls='profile' aria-selected='false') Заказы 
+          .c-office-inside-content.tab-content
+            #office.c-office-inxide__profile.active.tab-pane
+              .c-office-inside__subnavigation
+                ul.c-office-inside__list
+                  li.c-office-inside__item 
+                    a(href="#").c-office-inside__link Личные данные
+                  li.c-office-inside__item 
+                    a(href="#").c-office-inside__link Адреса доставки
+                  li.c-office-inside__item 
+                    a(href="#").c-office-inside__link Оповещения
+                  li.c-office-inside__item 
+                    a(href="#").c-office-inside__link Оповещения с форума
+                  li.c-office-inside__item 
+                    a(href="#").c-office-inside__link Изменения пароля
+              h2.c-office-inside__name Контактные данные
+              form.c-office-inside__contact 
+                .c-office-inside__line 
+                  .c-office-inside__contleft
+                    .c-office-inside__tit Контактное лицо:
+                    .c-office-insdie__it Иван
+                  .c-office-inside__contright
+                    a(href="#").c-office-inside__red Редактировать
+                form(action="").c-office__form    
+                  .c-office-inside__second 
+                    .c-office-inside__field 
+                      input(type="text").c-office-inside__input
+                    .c-office-inside__field 
+                      input(type="text").c-office-inside__input
+                    .c-office__btns  
+                      input(type="submit", value="Сохранить").e-btn.e-btn--accent-filled.c-office-inside__btnses
+                .c-office-inside__line   
+                  .c-office-inside__contleft
+                    .c-office-inside__tit Электронная почта:
+                    .c-office-insdie__it m********@yandex.ru
+                  .c-office-inside__contright
+                    a(href="#").c-office-inside__red Редактировать
+                .c-office-inside__contright.c-office-inside__contright--mob
+                  a(href="#").c-office-inside__red Редактировать
+                .c-office-inside__line
+                  .c-office-inside__contleft
+                    .c-office-inside__tit Номер телефона:
+                    .c-office-insdie__it +7951*****20
+                  .c-office-inside__contright
+                    a(href="#").c-office-inside__red Редактировать
+                .c-office-inside__contright.c-office-inside__contright--mob
+                  a(href="#").c-office-inside__red Редактировать
+              h2.c-office-inside__name Контактные данные
+              form.c-office-inside__form(action="")
+                .c-office-inside__line
+                  .c-office-inside__contleft
+                    .c-office-inside__tit Контактное лицо:
+                    .c-office-inside__field
+                      input(type="text").c-office-inside__input
+                .c-office-inside__line
+                  .c-office-inside__contleft
+                    .c-office-inside__tit Пол:
+                    +form-group({
+                      type: 'radio',
+                      value: 'Мужской',
+                      wrapper_class: 'radio-margin',
+                      name: 'office',
+                      required: true,
+                    })
+                    +form-group({
+                      type: 'radio',
+                      value: 'Женский',
+                      wrapper_class: 'radio-margin',
+                      name: 'office',
+                      required: true,
+                    })
+                button(type="button").e-btn.e-btn--accent-filled.c-office-inside__button Редактировать личные данные
+                .c-office-inside__buttons
+                  button(type="button").e-btn.e-btn--accent-filled.c-office-inside__button Сохранить  
+                  button(type="button").e-btn.e-btn--accent-filled.c-office-inside__button Отмена  
+              .c-office-inside__block 
+                h2.c-office-inside__name Контактные данные
+                .c-office-inside__contright
+                  a(id="adress").c-office-inside__red Редактировать
+              .c-office-inside__contright.c-office-inside__contright--mob
+                a(id="adressMob").c-office-inside__red Редактировать
+              form.c-office-inside__addres(action="" id="form")
+                .c-office-inside__row 
+                  .c-office-inside__label Город
+                  .c-office-inside__select 
+                    select.c-office-inside__enter
+                      option(value="1") Г. Москва
+                      option(value="2") 1-й Рабочий Посёлок п. (Внуковское п.)
+                      option(value="3") 5-е Горки д. (Солнечногорск г.)
+                      option(value="4") Аббакумово д. (Мытищи г.)
+                      option(value="5") Акатово д. (Московский п.)
+                .c-office-inside__row 
+                  .c-office-inside__label Получатель
+                  .c-office-inside__select 
+                    input.c-office-inside__enter(type="text")
+                .c-office-inside__row 
+                  .c-office-inside__label Получатель
+                  .c-office-inside__select 
+                    input.c-office-inside__enter(type="text")
+                    .c-office-inside__subselect
+                      .c-office-inside__small
+                        label.c-office-inside__textinput Номер*
+                        input.c-office-inside__enter(type="text")
+                      .c-office-inside__small
+                        label.c-office-inside__textinput Номер*
+                        input.c-office-inside__enter(type="text")
+                      .c-office-inside__small
+                        label.c-office-inside__textinput Номер*
+                        input.c-office-inside__enter(type="text")
+                      .c-office-inside__small
+                        label.c-office-inside__textinput Номер*
+                        input.c-office-inside__enter(type="text")
+                      .c-office-inside__small
+                        label.c-office-inside__textinput Номер*
+                        input.c-office-inside__enter(type="text")
+                      .c-office-inside__small
+                        label.c-office-inside__textinput Номер*
+                        input.c-office-inside__enter(type="text")
+                .c-office-inside__row 
+                  .c-office-inside__label Телефоны
+                  .c-office-inside__select.c-office-inside__select--sec
+                    .c-office-inside__different
+                      label.c-office-inside__textinput Номер*
+                      input.c-office-inside__enter(type="text")
+                      .c-office-inside__different
+                        label.c-office-inside__textinput Номер*
+                        input.c-office-inside__enter(type="text")
+                .c-office-inside__row
+                  .c-office-inside__label Телефоны
+                  .c-office-inside__select
+                    input.c-office-inside__enter(type="textarea")
+                .c-office-inside__row
+                  button(type="button").e-btn.e-btn--accent-filled.c-office-inside__button Сохранить
+              a.c-office-inside__be Москва, Нахимова 4, дом 2, тел: +79511681420, +79511681420
+              h2.c-office-inside__name Контактные данные
+              form(action="").c-office-inside__form
+                +form-group({
+                  type: 'checkbox',
+                  value: 'Предложение оценить сервисы Ситилинк',
+                  name: 'office',
+                  required: true,
+                  wrapper_class: "checkbox-office",
+                })
+                +form-group({
+                  type: 'checkbox',
+                  value: 'Специальные предложения от Ситилинк',
+                  name: 'office',
+                  wrapper_class: "checkbox-office",
+                  required: true,
+                })
+                +form-group({
+                  type: 'checkbox',
+                  value: 'Получать уведомления о личных сообщениях',
+                  name: 'office',
+                  wrapper_class: "checkbox-office",
+                  required: true,
+                })
+                +form-group({
+                  type: 'checkbox',
+                  value: 'Напоминание о товарах в корзине',
+                  name: 'office',
+                  wrapper_class: "checkbox-office",
+                  required: true
+                })
+                +form-group({
+                  type: 'checkbox',
+                  value: 'Персональные рекомендации и уведомления',
+                  name: 'office',
+                  required: true,
+                })
+              #agremment.c-office__agremment Настоящим я даю разрешение Общество с ограниченной ответственностью "Ситилинк" (далее – «Ситилинк») в целях заключения и исполнения договора купли-продажи обрабатывать - собирать, записывать, систематизировать, накапливать, хранить, уточнять (обновлять, изменять), извлекать, использовать, передавать (в том числе поручать обработку другим лицам), обезличивать, блокировать, удалять, уничтожать - мои персональные данные: фамилию, имя, номера домашнего и мобильного телефонов, адрес электронной почты. Также я разрешаю Ситилинк в целях информирования о товарах, работах, услугах осуществлять обработку вышеперечисленных персональных данных и направлять на указанный мною адрес электронной почты и/или на номер мобильного телефона рекламу и информацию о товарах, работах, услугах Ситилинк и его партнеров, отключить которое можно в настройках личного кабинета. Согласие может быть отозвано мною в любой момент путем направления письменного уведомления по адресу Ситилинк.
+              button(type="button").e-btn.e-btn--accent-filled.c-office-inside__button Сохранить
+              .c-office-inside__checkwrap
+                +form-group({
+                  type: 'checkbox',
+                  value: 'Персональные рекомендации и уведомления <span id="span"> политики конфиденциальности. </span>' ,
+                  name: 'office',
+                  required: true,
+                })
+              h2.c-office-inside__name Контактные данные
+              .c-office-inside__forum
+                .c-office-inside__text У вас нет подписок на оповещения.
+              h2.c-office-inside__name Контактные данные
+              form.c-office-inside__form(action="/")
+                .c-office-inside__line
+                  .c-office-inside__contleft
+                    .c-office-inside__tit Контактное лицо:
+                    .c-office-inside__field
+                      input(type="text").c-office-inside__input
+                .c-office-inside__line
+                  .c-office-inside__contleft
+                    .c-office-inside__tit Контактное лицо:
+                    .c-office-inside__field
+                      input(type="text").c-office-inside__input
+                .c-office-inside__line
+                  .c-office-inside__contleft
+                    .c-office-inside__tit Контактное лицо:
+                    .c-office-inside__field
+                      input(type="text").c-office-inside__input
+              button(type="button").e-btn.e-btn--accent-filled.c-office-inside__button Сохранить
+            #profile.c-office-inside__order.tab-pane   
+              .c-office-inside__no У вас нет созданных заказов!
+              .c-office-inside__orders 
+                .c-office-inside__object
+                  .c-office-inside__objwrap
+                    .c-office-inside__img
+                      +picture({
+                        img:'office/order.jpg'
+                      })
+                    .c-office-inside__objectdescript  
+                      .c-office-inside__objtop Код товара: 1426039
+                      .c-office-inside__objtitle Телевизор PHILIPS 55PUS6704/60, 55", Ultra HD 4K
+                  .c-office-inside__price 14 999  
+                    +svg('icon-rub-s')
+        .c-office-inside__right
+          span.c-office-inside__name Иван
+          .c-office-inside__photo
+            +picture({
+              img:'office/photo.jpg'
+            })
+          button(type="button").e-btn.e-btn--accent-filled.c-office-inside__btn Загрузить фотографию
+          .c-office-inside__contwrap
+            .c-office-inside__rightline
+              .c-office-inside__names Город
+              .c-office-inside__descrip Москва
+            .c-office-inside__rightline 
+              .c-office-inside__names Пол
+              .c-office-inside__descrip Не указан
+            .c-office-inside__rightline 
+              .c-office-inside__names Аккаунт создан
+              .c-office-inside__descrip 21 июня
+          .c-office-inside__contwrap  
+            h4.c-office-inside__conttitle Мои покупки
+            .c-office-inside__rightline 
+              .c-office-inside__text Текущий квартал: апрель май июнь
+          .c-office-inside__contwrap  
+            h4.c-office-inside__conttitle Активность
+            .c-office-inside__rightline 
+              .c-office-inside__names Рейтинг
+              .c-office-inside__descrip 0
+            .c-office-inside__rightline 
+              .c-office-inside__names Рейтинг
+              .c-office-inside__descrip 0
+            .c-office-inside__rightline 
+              .c-office-inside__names Рейтинг
+              .c-office-inside__descrip 0
+            .c-office-inside__rightline 
+              .c-office-inside__names Рейтинг
+              .c-office-inside__descrip 0
+            .c-office-inside__rightline 
+              .c-office-inside__names Рейтинг
+              .c-office-inside__descrip 0
+            .c-office-inside__rightline 
+              .c-office-inside__names Рейтинг
+              .c-office-inside__descrip 0
+          .c-office-inside__contwrap  
+            h4.c-office-inside__conttitle Активность
+            .c-office-inside__rightline 
+              .c-office-inside__names Рейтинг
+              .c-office-inside__descrip 0
+            .c-office-inside__rightline 
+              .c-office-inside__names Рейтинг
+              .c-office-inside__descrip 0
+            .c-office-inside__rightline 
+              .c-office-inside__names Рейтинг
+              .c-office-inside__descrip 0
+            .c-office-inside__rightline 
+              .c-office-inside__names Рейтинг
+              .c-office-inside__descrip 0
+            .c-office-inside__rightline 
+              .c-office-inside__names Рейтинг
+              .c-office-inside__descrip 0
+            .c-office-inside__rightline 
+              .c-office-inside__names Рейтинг
+              .c-office-inside__descrip 0

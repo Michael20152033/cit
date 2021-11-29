@@ -1,0 +1,29 @@
+.c-brands-tile {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 3rem 2rem;
+  @include media-breakpoint-down(xl) {
+    width: 25%;
+    flex-shrink: 0;
+    padding: 2rem;
+  }
+  &--txt {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #dfdfe1;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5d5d64;
+    text-decoration: none;
+    transition: border-color 0.3s;
+    margin: 5px;
+    text-transform: uppercase;
+    width: auto;
+    &:hover {
+      border: 1px solid $accent;
+    }
+  }
+}

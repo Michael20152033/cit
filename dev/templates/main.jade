@@ -1,0 +1,765 @@
+extends _includes/_extends/main
+
+include _includes/components/c-main-banner/c-main-banner
+include _includes/components/c-main-categories/c-main-categories
+include _includes/components/c-category-tile/c-category-tile
+include _includes/components/c-products-banner/c-products-banner
+include _includes/components/c-product-tile/c-product-tile
+
+include _includes/components/c-overview-tile/c-overview-tile
+include _includes/components/c-news-tile/c-news-tile
+
+include _includes/components/c-brands-tile/c-brands-tile
+
+
+include _includes/components/c-service-tile/c-service-tile
+include _includes/components/c-configurator-box/c-configurator-box
+include _includes/components/c-main-list-content/c-main-list-content
+
+
+
+include _includes/components/c-forms/c-forms
+
+
+block head 
+	+head({'title' : 'Главная'})
+
+block content 
+	+c-main-banner()
+	+c-main-categories({
+		newCategories: [
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Электрика',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/1.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Автоаккумуляторы',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/2.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Наборы инструментов',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/3.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Электрика',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/4.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Автоаккумуляторы',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/5.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Наборы инструментов',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/3.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Наборы инструментов',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/3.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Электрика',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/4.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Автоаккумуляторы',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/5.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Наборы инструментов',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/3.png'
+					}
+				}
+			},
+		],
+		popularCategories: [
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Электрика',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/4.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Автоаккумуляторы',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/5.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Наборы инструментов',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/3.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Наборы инструментов',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/3.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Электрика',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/4.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Автоаккумуляторы',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/5.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Наборы инструментов',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/3.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Электрика',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/1.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Автоаккумуляторы',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/2.png'
+					}
+				}
+			},
+			{
+				categoryTile: {
+					custom_class: 'has-arrow',
+					name: 'Наборы инструментов',
+					picture: {
+						custom_class: 'h-object-fit c-category-tile__img',
+						img:'categories/3.png'
+					}
+				}
+			},
+		],
+	})
+	+c-configurator-box()
+	+c-main-list-content({
+		title: 'Специально для вас',
+		link: 'Все хиты',
+		slider: true,
+		leftHead: true,
+		sliderBtns: true,
+		slider_class: 'classic',
+		items: [
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					label: 'Акция',
+					labelClass: 'orange',
+					title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+					price: '63900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/2.jpg'
+					},
+					label: 'Новинка',
+					labelClass: 'green',
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					statusAdded: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/2.jpg'
+					},
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+		]
+	})
+	+c-main-list-content({
+		slider: true,
+		leftHead: true,
+		title: 'Вы недавно смотрели',
+		link: 'История просмотров',
+		custom_class: 'gray info-slider-btns',
+		slider_class: 'has-left-nav',
+		infoSliderBtns: true,
+		items: [
+			{
+				product: {
+					custom_class: 'visible-elements',
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					label: 'Акция',
+					labelClass: 'orange',
+					title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+					price: '63900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					custom_class: 'visible-elements',
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					label: 'Акция',
+					labelClass: 'orange',
+					title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+					price: '63900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					custom_class: 'visible-elements',
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					label: 'Акция',
+					labelClass: 'orange',
+					title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+					price: '63900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					custom_class: 'visible-elements',
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					label: 'Акция',
+					labelClass: 'orange',
+					title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+					price: '63900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					custom_class: 'visible-elements',
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					label: 'Акция',
+					labelClass: 'orange',
+					title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+					price: '63900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					custom_class: 'visible-elements',
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					label: 'Акция',
+					labelClass: 'orange',
+					title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+					price: '63900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+		]
+	})
+	+c-main-list-content({
+		slider: true,
+		leftHead: true,
+		title: 'Лучшие новинки',
+		link: 'Все новинки',
+		sliderBtns: true,
+		slider_class: 'classic',
+		items: [
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					label: 'Акция',
+					labelClass: 'orange',
+					title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+					price: '63900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/2.jpg'
+					},
+					label: 'Новинка',
+					labelClass: 'green',
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					statusAdded: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/2.jpg'
+					},
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+		]
+	})
+	+c-main-list-content({
+		slider: true,
+		leftHead: true,
+		title: 'Успейте купить',
+		sliderBtns: true,
+		slider_class: 'classic',
+		items: [
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					label: 'Акция',
+					labelClass: 'orange',
+					oldPrice: '9000',
+					crownPrice: '5050',
+					title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+					price: '63900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/2.jpg'
+					},
+					label: 'Новинка',
+					labelClass: 'green',
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					statusAdded: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/2.jpg'
+					},
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+		]
+	})
+	+c-main-list-content({
+		slider: true,
+		leftHead: true,
+		title: 'Обзоры новинок',
+		link: 'Все обзоры',
+		sliderBtns: true,
+		slider_class: 'classic',
+		items: [
+			{
+				overview: {
+					img: {
+						custom_class: 'c-overview-tile__picture',
+						img:'news/1.jpg'
+					},
+					date: '31 мая',
+					title: 'Почему робот-пылесос не возвращается на базу',
+					desc: 'Собрали самые распространенные проблемы и способы устранения.',
+				}
+			},
+			{
+				overview: {
+					img: {
+						custom_class: 'c-overview-tile__picture',
+						img:'news/2.jpg'
+					},
+					date: '31 мая',
+					title: 'Почему робот-пылесос не возвращается на базу',
+					desc: 'Собрали самые распространенные проблемы и способы устранения.',
+				}
+			},
+			{
+				overview: {
+					date: '31 мая',
+					title: 'Почему робот-пылесос не возвращается на базу',
+					desc: 'Собрали самые распространенные проблемы и способы устранения.',
+				}
+			},
+			{
+				overview: {
+					date: '31 мая',
+					title: 'Почему робот-пылесос не возвращается на базу',
+					desc: 'Собрали самые распространенные проблемы и способы устранения.',
+				}
+			},
+			{
+				overview: {
+					date: '31 мая',
+					title: 'Почему робот-пылесос не возвращается на базу',
+					desc: 'Собрали самые распространенные проблемы и способы устранения.',
+				}
+			},
+		]
+	})
+	+c-main-list-content({
+		slider: true,
+		leftHead: true,
+		title: 'Новости',
+		link: 'Все новости',
+		sliderBtns: true,
+		slider_class: 'classic',
+		items: [
+			{
+				news: {
+					date: '31 мая',
+					title: 'Почему робот-пылесос не возвращается на базу',
+					desc: 'Собрали самые распространенные проблемы и способы устранения.',
+				}
+			},
+			{
+				news: {
+					date: '31 мая',
+					title: 'Почему робот-пылесос не возвращается на базу',
+					desc: 'Собрали самые распространенные проблемы и способы устранения.',
+				}
+			},
+			{
+				news: {
+					date: '31 мая',
+					title: 'Почему робот-пылесос не возвращается на базу',
+					desc: 'Собрали самые распространенные проблемы и способы устранения.',
+				}
+			},
+			{
+				news: {
+					date: '31 мая',
+					title: 'Почему робот-пылесос не возвращается на базу',
+					desc: 'Собрали самые распространенные проблемы и способы устранения.',
+				}
+			},
+			{
+				news: {
+					date: '31 мая',
+					title: 'Почему робот-пылесос не возвращается на базу',
+					desc: 'Собрали самые распространенные проблемы и способы устранения.',
+				}
+			},
+		]
+	})
+	+c-main-list-content({
+		leftHead: true,
+		title: 'Популярные бренды',
+		link: 'Все бренды',
+		brands: true,
+		items: [
+			{
+				brands: {
+					img: {
+						img:'brands/1.jpg'
+					},
+				}
+			},
+			{
+				brands: {
+					img: {
+						img:'brands/2.png'
+					},
+				}
+			},
+			{
+				brands: {
+					img: {
+						img:'brands/3.jpg'
+					},
+				}
+			},
+			{
+				brands: {
+					img: {
+						img:'brands/4.jpg'
+					},
+				}
+			},
+			{
+				brands: {
+					img: {
+						img:'brands/1.jpg'
+					},
+				}
+			},
+			{
+				brands: {
+					img: {
+						img:'brands/3.jpg'
+					},
+				}
+			},
+			{
+				brands: {
+					img: {
+						img:'brands/4.jpg'
+					},
+				}
+			},
+			{
+				brands: {
+					img: {
+						img:'brands/1.jpg'
+					},
+				}
+			},
+		]
+	})
+	+c-main-list-content({
+		leftHead: true,
+		title: 'Другие услуги',
+		link: 'Все услуги',
+		service: true,
+		items: [
+			{
+				service: {
+					title: 'Ускорим работу компьютера',
+					desc: 'Удаленная компьютерная поддержка на 12 месяцев для 1 устройства',
+				}
+			},
+			{
+				service: {
+					title: 'Ускорим работу компьютера',
+					desc: 'Удаленная компьютерная поддержка на 12 месяцев для 1 устройства',
+				}
+			},
+			{
+				service: {
+					title: 'Ускорим работу компьютера',
+					desc: 'Удаленная компьютерная поддержка на 12 месяцев для 1 устройства',
+				}
+			},
+			{
+				service: {
+					title: 'Ускорим работу компьютера',
+					desc: 'Удаленная компьютерная поддержка на 12 месяцев для 1 устройства',
+				}
+			},
+		]
+	})

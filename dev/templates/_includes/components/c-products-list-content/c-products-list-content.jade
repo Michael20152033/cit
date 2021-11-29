@@ -1,0 +1,44 @@
+mixin c-products-list-content(data)
+	.c-main-list-content(class=data.custom_class ? data.custom_class : null)
+		.container
+			.row
+					.c-main-list-content__info
+						.c-main-list-content__info-head.c-main-list-content__info-head--products
+							h2.c-main-list-content__title!=data.title
+							if data.link
+								a(href="#").c-main-list-content__more!=data.link
+								a(href="#").c-main-list-content__more.c-main-list-content__more--mobile См.все
+						if data.infoSliderBtns 
+							.c-main-list-content__info-slider-btns 
+								.swiper-button.swiper-button-prev
+									+svg('icon-arrow-light')
+								.swiper-pagination
+								.swiper-button.swiper-button-next
+									+svg('icon-arrow-light')
+				.col-xl-20
+					if data.brands 
+						.c-main-list-content__brands
+							each item in data.items
+								if item.brands
+									+c-brands-tile(item.brands)
+					if data.service 
+						.c-main-list-content__service
+							each item in data.items
+								if item.service
+									+c-service-tile(item.service)
+					else
+						.c-main-list-content__slider.swiper-container(class=data.slider_class ? data.slider_class : null)
+							.swiper-wrapper
+								each item in data.items
+									.swiper-slide
+										if item.product
+											+c-product-tile(item.product)
+										if item.overview
+											+c-overview-tile(item.overview)
+										if item.news
+											+c-news-tile(item.news)
+							if data.sliderBtns
+								.swiper-button.swiper-button-prev
+									+svg('icon-arrow')
+								.swiper-button.swiper-button-next
+									+svg('icon-arrow')

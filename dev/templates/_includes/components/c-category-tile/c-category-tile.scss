@@ -1,0 +1,40 @@
+.c-category-tile {
+  box-shadow: 0 5px 25px rgba(30 , 31 , 33 , 0.12);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 8rem;
+  text-align: center;
+  flex-direction: column;
+  @include media-breakpoint-down(sm) {
+    padding: 1rem;
+    min-height: 10rem;
+  }
+  &__img {
+    height: 5.6rem;
+    @include media-breakpoint-down(sm) {
+      height: 3.2rem;
+    }
+    img {
+      width: auto;
+    }
+  }
+  &__name {
+    display: inline-flex;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    @include media-breakpoint-down(sm) {
+      font-size: 1.4rem;
+    }
+  }
+  &.has-arrow {
+    .c-category-tile__name {
+      position: relative;
+      &:after {
+        content: "\2192";
+      }
+    }
+  }
+}

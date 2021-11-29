@@ -1,0 +1,38 @@
+mixin c-product-tile(data)
+	.c-product-tile(class=data.custom_class ? data.custom_class : null)
+		a(href="#").c-product-tile__link
+		.c-product-tile__header
+			if data.label
+				.c-product-tile__labels
+					span(class=data.labelClass ? data.labelClass : null).c-product-tile__label!=data.label
+			.c-product-tile__pic
+				+picture(data.img)
+			.c-product-tile__actions 
+				button(type="button").c-product-tile__action
+					+svg('icon-favourites')
+			span.c-product-tile__title!=data.title
+		.c-product-tile__footer
+			.c-product-tile__price-wrapper
+				.c-product-tile__price-top
+					if data.oldPrice 
+						span.c-product-tile__price-old!=data.oldPrice
+					if data.crownPrice 
+						.c-product-tile__price-crown 
+							+svg('icon-crown')
+							span.price!=data.crownPrice
+							span.currency!=data.currency
+				.c-product-tile__price-bottom
+					if data.price 
+						.c-product-tile__price 
+							span.price!=data.price
+							span.currency!=data.currency
+			.c-product-tile__add
+				.c-product-tile__actions 
+					button(type="button").c-product-tile__action
+						+svg('icon-favourites')
+					button(type="button").c-product-tile__action
+						+svg('icon-comparing')
+				if data.addBtn 
+					button(type="button").c-product-tile__add-btn.icon-font
+				if data.statusAdded
+					a(href="#/").c-product-tile__added.icon-font

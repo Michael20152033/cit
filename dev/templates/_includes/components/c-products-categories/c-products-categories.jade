@@ -1,0 +1,15 @@
+mixin c-products-categories(data)
+	.c-main-categories
+		.container 
+			.c-main-categories__inner 
+				#myTabContent.tab-content.c-main-categories__tabs-content
+					#newCategories.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='newCategories-tab')
+						.row
+							each item in data.newCategories
+								.col-xl-4.col-lg-5.col-sm-10
+									+c-category-tile(item.categoryTile)
+					#popularCategories.tab-pane.fade(role='tabpanel' aria-labelledby='popularCategories-tab')
+						.row
+							each item in data.popularCategories
+								.col-xl-4.col-lg-5.col-sm-10
+									+c-category-tile(item.categoryTile)

@@ -1,0 +1,283 @@
+.c-busket {
+  padding: 4rem 0;
+  @include media-breakpoint-down(lg) {
+    padding-top: 6rem;
+  }
+  &__return {
+    color: #5d5d64;
+    font-size: 1.8rem;
+  }
+  &__title {
+    font-size: 4.8rem;
+    margin-top: 0.5rem;
+    @include media-breakpoint-down(md) {
+      font-size: 3.6rem;
+    }
+  }
+  &__inner {
+    padding-top: 4rem;
+  }
+  &-item {
+    margin-bottom: 5rem;
+    &__main {
+      display: flex;
+      @include media-breakpoint-down(lg) {
+        flex-wrap: wrap;
+      }
+      @include media-breakpoint-down(xs) {
+        flex-direction: column;
+      }
+    }
+    &__img {
+      width: 8rem;
+      max-height: 15rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      padding-left: 3rem;
+      @include media-breakpoint-down(lg) {
+        width: calc(100% - 8rem);
+      }
+      @include media-breakpoint-down(xs) {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 2rem;
+      }
+    }
+    &__actions {
+      margin-left: auto;
+      display: flex;
+      margin-top: 2rem;
+      flex-shrink: 0;
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+      }
+    }
+    &__code {
+      font-size: 1.4rem;
+      color: #5d5d64;
+    }
+    &__counter {
+      margin-top: 0.5rem;
+      flex-shrink: 0;
+    }
+    &__price {
+      display: flex;
+      font-size: 2.4rem;
+      min-width: 13rem;
+      margin: 0 3rem;
+      justify-content: center;
+      @include media-breakpoint-down(lg) {
+        margin-left: 5rem;
+      }
+      @include media-breakpoint-down(xs) {
+        font-size: 2rem;
+        margin: 0 2rem;
+      }
+      .rub {
+        color: #b3b3b7;
+        margin-left: 0.5rem;
+      }
+    }
+    &__title {
+      padding: 5px 15px 10px 0;
+      font-size: 24px;
+      line-height: 1.15;
+      font-weight: 500;
+      display: inline-flex;
+      @include media-breakpoint-down(md) {
+        font-size: 2rem;
+      }
+    }
+    &__delivery {
+      display: flex;
+      align-items: center;
+      @include media-breakpoint-down(xl) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 1rem;
+      }
+      &-group {
+        margin-right: 2rem;
+        display: flex;
+        align-items: center;
+        @include media-breakpoint-down(xl) {
+          margin-right: 0;
+          margin-bottom: 0.5rem;
+        }
+        .green {
+          color: #31bc00;
+        }
+        span {
+          @include media-breakpoint-down(md) {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      a {
+        color: #151528;
+        border-bottom: 1px dotted;
+        cursor: pointer;
+        font-weight: 500;
+        margin: 0 0.3rem;
+      }
+      .icon {
+        color: #31bc00;
+        margin-right: 0.5rem;
+      }
+    }
+    &__btns {
+      margin-top: 0.5rem;
+      @include media-breakpoint-down(lg) {
+        margin-left: auto;
+      }
+    }
+    &__btn {
+      margin-left: 1.5rem;
+      &:hover {
+        .icon {
+          color: $accent;
+        }
+      }
+      .icon {
+        font-size: 2rem;
+        color: #b3b3b7;
+      }
+    }
+    &__services {
+      padding-top: 2rem;
+    }
+    &__service {
+      .c-busket-item__btn {
+        display: flex;
+        align-items: center;
+        .icon {
+          transform: rotate(90deg);
+          transition: all 0.3s ease;
+          font-size: 2.5rem;
+          color: #151528;
+        }
+        span {
+          display: inline-block;
+          font-size: 20px;
+          color: #151528;
+          position: relative;
+          padding-left: 17px;
+          margin-left: -17px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          user-select: none;
+        }
+        &.collapsed {
+          .icon {
+            transform: rotate(0);
+          }
+        }
+      }
+    }
+    &__collapse .card-body {
+      padding-left: 4rem;
+      padding-top: 2rem;
+      padding-right: 12.5rem;
+    }
+  }
+  &-sidebar {
+    max-width: 25.6rem;
+    width: 100%;
+    margin-left: auto;
+    &__free {
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      background: rgba(163, 220, 0, 0.05);
+      margin-bottom: 2rem;
+      &-img {
+        width: 5rem;
+        height: 5rem;
+      }
+      &-txt {
+        margin-left: 1.5rem;
+        h4 {
+          font-size: 18px;
+          line-height: 25px;
+          margin-bottom: 0;
+          font-weight: 500;
+          line-height: normal;
+        }
+        span {
+          font-size: 14px;
+          line-height: 1.44;
+          color: #5d5d64;
+          line-height: normal;
+        }
+      }
+    }
+    &__total {
+      background: #f5f5f6;
+      padding: 20px 25px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+      &-ttl {
+        font-size: 24px;
+        line-height: 26px;
+        padding-bottom: 20px;
+        font-weight: 400;
+        margin: 0;
+      }
+      &-count {
+        font-weight: 500;
+        font-size: 1.4rem;
+      }
+      &-promo {
+        display: inline-flex;
+        padding: 5px 0;
+      }
+      &-price {
+        font-size: 2.4rem;
+        margin-top: 1rem;
+        .rub {
+          margin-left: 0.5rem;
+          color: #b3b3b7;
+        }
+      }
+      .e-btn {
+        margin-top: 10px;
+        min-width: 120px;
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 16px;
+        @include media-breakpoint-down(xxl) {
+          font-size: 1.4rem;
+        }
+      }
+      &-footer {
+        font-size: 14px;
+        border-top: 1px solid #dfdfe1;
+        margin: 20px 0 0;
+        padding-top: 20px;
+        span {
+          a {
+            border-bottom: 1px solid rgba(34, 116, 165, 0.3);
+            color: #2274a5;
+          }
+        }
+      }
+    }
+    &__btn {
+      margin: 1rem 0;
+    }
+    &__notify {
+      font-size: 14px;
+      margin: 20px 0;
+      border: 1px solid #fe7200;
+      padding: 20px;
+    }
+  }
+}

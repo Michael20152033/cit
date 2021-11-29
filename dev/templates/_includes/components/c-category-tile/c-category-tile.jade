@@ -1,0 +1,4 @@
+mixin c-category-tile(data)
+	a(href="#" , class=data.custom_class ? data.custom_class : null).c-category-tile
+		+picture(data.picture)
+		span.c-category-tile__name!=data.name

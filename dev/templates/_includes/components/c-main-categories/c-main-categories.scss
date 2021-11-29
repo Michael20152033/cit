@@ -1,0 +1,33 @@
+.c-main-categories {
+  padding-top: 3rem;
+  &__tabs-nav {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3rem;
+    .nav-link , .del {
+      padding: 0;
+      color: #B3B3B7;
+      font-size: 3.2rem;
+      line-height: 1.2;
+      @include media-breakpoint-down(md) {
+        font-size: 1.6rem;
+      }
+      &.active {
+        font-weight: 700;
+        color: #151528;
+      }
+    }
+    .del {
+      margin: 0 2rem;
+      @include media-breakpoint-down(md) {
+        margin: 0 .5rem;
+      }
+    }
+  }
+  .c-category-tile {
+    height: 100%;
+  }
+  [class*="col-"] {
+    margin-bottom: 2rem;
+  }
+}

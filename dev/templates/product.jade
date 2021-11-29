@@ -1,0 +1,220 @@
+extends _includes/_extends/main
+
+include _includes/components/c-product/c-product
+include _includes/components/c-product-tile/c-product-tile
+include _includes/components/c-brands-tile/c-brands-tile
+include _includes/components/c-main-list-content/c-main-list-content
+
+block head 
+  +head({'title' : 'Страница товара'})
+
+block content
+  +c-product()
+  +c-main-list-content({
+    leftHead: true,
+    slider: true,
+		title: 'Похожие товары',
+    sliderBtns: true,
+    slider_class: 'classic',
+		items: [
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+					price: '63900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/2.jpg'
+					},
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+          addBtn: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/2.jpg'
+					},
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+			{
+				product: {
+					img: {
+						custom_class: 'h-object-fit c-product-tile__img',
+						img:'products/1.jpg'
+					},
+					title: 'Смартфон XIAOMI Poco X3 128Gb,  серый',
+					oldPrice: '17 250',
+					price: '3900',
+					currency: '₽',
+					addBtn: true
+				}
+			},
+		]
+	})
+  +c-main-list-content({
+    leftHead: true,
+
+		title: 'Популярные бренды',
+		custom_class: 'text-brands',
+		brands: true,
+		items: [
+			{
+				brands: {
+					txt: 'A4TECH'
+				}
+			},
+			{
+				brands: {
+					txt: 'AEROCOOL'
+				}
+			},
+			{
+				brands: {
+					txt: 'AROZZI'
+				}
+			},
+			{
+				brands: {
+					txt: 'HP'
+				}
+			},
+			{
+				brands: {
+					txt: 'ZOMBIE'
+				}
+			}
+		]
+	})
+  +c-main-list-content({
+    leftHead: true,
+    slider: true,
+    title: 'Вы недавно смотрели',
+    link: 'История просмотров',
+    custom_class: 'gray info-slider-btns mb-0',
+    slider_class: 'has-left-nav',
+    infoSliderBtns: true,
+    items: [
+      {
+        product: {
+          custom_class: 'visible-elements',
+          img: {
+            custom_class: 'h-object-fit c-product-tile__img',
+            img:'products/1.jpg'
+          },
+          label: 'Акция',
+          labelClass: 'orange',
+          title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+          price: '63900',
+          currency: '₽',
+          addBtn: true
+        }
+      },
+      {
+        product: {
+          custom_class: 'visible-elements',
+          img: {
+            custom_class: 'h-object-fit c-product-tile__img',
+            img:'products/1.jpg'
+          },
+          label: 'Акция',
+          labelClass: 'orange',
+          title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+          price: '63900',
+          currency: '₽',
+          addBtn: true
+        }
+      },
+      {
+        product: {
+          custom_class: 'visible-elements',
+          img: {
+            custom_class: 'h-object-fit c-product-tile__img',
+            img:'products/1.jpg'
+          },
+          label: 'Акция',
+          labelClass: 'orange',
+          title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+          price: '63900',
+          currency: '₽',
+          addBtn: true
+        }
+      },
+      {
+        product: {
+          custom_class: 'visible-elements',
+          img: {
+            custom_class: 'h-object-fit c-product-tile__img',
+            img:'products/1.jpg'
+          },
+          label: 'Акция',
+          labelClass: 'orange',
+          title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+          price: '63900',
+          currency: '₽',
+          addBtn: true
+        }
+      },
+      {
+        product: {
+          custom_class: 'visible-elements',
+          img: {
+            custom_class: 'h-object-fit c-product-tile__img',
+            img:'products/1.jpg'
+          },
+          label: 'Акция',
+          labelClass: 'orange',
+          title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+          price: '63900',
+          currency: '₽',
+          addBtn: true
+        }
+      },
+      {
+        product: {
+          custom_class: 'visible-elements',
+          img: {
+            custom_class: 'h-object-fit c-product-tile__img',
+            img:'products/1.jpg'
+          },
+          label: 'Акция',
+          labelClass: 'orange',
+          title: 'Видеокарта PALIT NVIDIA  GeForce GTX 1660SUPER ,  PA-GTX1660SUPER GP OC 6G',
+          price: '63900',
+          currency: '₽',
+          addBtn: true
+        }
+      },
+    ]
+  })

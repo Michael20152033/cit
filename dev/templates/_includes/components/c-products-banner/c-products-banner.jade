@@ -1,0 +1,40 @@
+mixin c-products-banner(data)
+  .c-products-banner
+    
+      .c-products-banner__row.row
+        .col-xl-18
+          .c-products-banner__slider-wrapper
+            .c-products-banner__slider.swiper-container
+              .swiper-wrapper
+                .c-products-banner__slide.c-products-banner-slide.swiper-slide
+                  a(href="#").c-products-banner-slide__link
+                    +picture({
+                      custom_class: 'h-object-fit',
+                      img:'products-banner/1.jpg'
+                    })
+                .c-products-banner__slide.c-products-banner-slide.swiper-slide
+                  a(href="#").c-products-banner-slide__link
+                    +picture({
+                      custom_class: 'h-object-fit',
+                      img:'products-banner/2.jpg'
+                    })
+                .c-products-banner__slide.c-products-banner-slide.swiper-slide
+                  a(href="#").c-products-banner-slide__link
+                    +picture({
+                      custom_class: 'h-object-fit',
+                      img:'products-banner/3.jpg'
+                    })
+                .c-products-banner__slide.c-products-banner-slide.swiper-slide
+                  a(href="#").c-products-banner-slide__link
+                    +picture({
+                      custom_class: 'h-object-fit',
+                      img:'products-banner/4.jpg'
+                    })
+                .c-products-banner__slide.c-products-banner-slide.swiper-slide
+                  a(href="#").c-products-banner-slide__link
+                    +picture({
+                      custom_class: 'h-object-fit',
+                      img:'products-banner/5.jpg'
+                    })
+            .swiper-button.swiper-button-prev.swiper-button-prev--pr
+            .swiper-button.swiper-button-next.swiper-button-next--nx   

@@ -1,0 +1,7 @@
+mixin c-news-tile(data)
+	a.c-news-tile(class=data.custom_class ? data.custom_class : null , href="#")
+		if data.img
+			+picture(data.img)
+		span.c-news-tile__date!=data.date
+		h3.c-news-tile__title!=data.title
+		p.c-news-tile__desc!=data.desc

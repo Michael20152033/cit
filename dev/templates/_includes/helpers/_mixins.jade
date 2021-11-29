@@ -1,0 +1,14 @@
+mixin svg(ttl, advClass)
+	- ttl ? ttl : ttl = ""
+	- advClass ? advClass : advClass = ""
+	svg.icon(class=ttl + ' ' + advClass, width="1em", height="1em")
+		use(xlink:href='s/images/useful/svg/theme/symbol-defs.svg#' + ttl)
+
+
+mixin picture(data)
+	picture(class=data.custom_class ? data.custom_class : null)
+		source(media="(max-width: 991px)", srcset='s/images/useful/' +  data.img)
+		source(media="(max-width: 767px)", srcset='s/images/useful/' +  data.img)
+		if data.webp
+			source(srcset='s/images/useful/' + data.webp , type="image/webp")
+		img(src='s/images/useful/' + data.img,  alt=data.img)
